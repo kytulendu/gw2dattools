@@ -2,6 +2,7 @@
 
 #include <fstream>
 #include <unordered_map>
+#include <algorithm>
 
 #include "gw2DatTools/exception/Exception.h"
 
