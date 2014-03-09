@@ -10,40 +10,47 @@
 
 int main(int argc, char* argv[])
 {
-	std::cout << "Start" << std::endl;
-    const uint32_t aBufferSize = 1024 * 1024 * 30; // We make the assumption that no file is bigger than 30 Mo
-    
-    auto pANDatInterface = gw2dt::interface::createANDatInterface("D:\\GuildWars2\\Gw2.dat");
+	if (argc != 2)
+	{
+		std::cout << "usage: extract [file id]" << std::endl;
+		return 0;
+	}
+	auto file_id = atoi(argv[1]);
 
-	std::cout << "Getting FileRecord Id" << std::endl;
-    auto aFileRecord = pANDatInterface->getFileRecordForFileId(293296);
-    
-    uint8_t* pOriBuffer = new uint8_t[aBufferSize];
-    uint8_t* pInfBuffer = new uint8_t[aBufferSize];
+	std::cout << "Start" << std::endl;
+	const uint32_t aBufferSize = 1024 * 1024 * 30; // We make the assumption that no file is bigger than 30 Mo
+
+	auto pANDatInterface = gw2dt::interface::createANDatInterface("Y:\\Games\\Guild Wars 2\\Gw2.dat");
+
+	std::cout << "Getting FileRecord Id: " << file_id << std::endl;
+	auto aFileRecord = pANDatInterface->getFileRecordForFileId(file_id);
+
+	uint8_t* pOriBuffer = new uint8_t[aBufferSize];
+	uint8_t* pInfBuffer = new uint8_t[aBufferSize];
 	uint8_t* pOutBuffer = new uint8_t[aBufferSize];
 
 	uint8_t* pAtexBuffer = nullptr;
 	uint32_t aAtexBufferSize = 0;
-    
+
 	uint32_t aOriSize = aBufferSize;
 	pANDatInterface->getBuffer(aFileRecord, aOriSize, pOriBuffer);
-	
+
 	std::ostringstream aStringstream;
-	aStringstream << "D:\\output-dec-";
+	aStringstream << "Y:\\";
 	aStringstream << aFileRecord.fileId;
-	
+
 	std::ofstream aStream(aStringstream.str(), std::ios::binary);
-	
+
 	if (aOriSize == aBufferSize)
 	{
 		std::cout << "File " << aFileRecord.fileId << " has a size greater than (or equal to) 30Mo." << std::endl;
 	}
-	
+
 	if (aFileRecord.isCompressed)
 	{
 		uint32_t aInfSize = aBufferSize;
-		std::cout << "Compressed." << std::endl;
-		
+		std::cout << "File is compressed." << std::endl;
+
 		try
 		{
 			gw2dt::compression::inflateDatFileBuffer(aOriSize, pOriBuffer, aInfSize, pInfBuffer);
@@ -58,7 +65,7 @@ int main(int argc, char* argv[])
 	}
 	else
 	{
-		std::cout << "Not compressed." << std::endl;
+		std::cout << "File is not compressed." << std::endl;
 		pAtexBuffer = pOriBuffer;
 		aAtexBufferSize = aOriSize;
 	}
@@ -78,10 +85,8 @@ int main(int argc, char* argv[])
 
 	aStream.close();
 
-	int i; std::cin >> i;
+	delete[] pOriBuffer;
+	delete[] pInfBuffer;
 
-    delete[] pOriBuffer;
-    delete[] pInfBuffer;
-
-    return 0;
+	return 0;
 };
