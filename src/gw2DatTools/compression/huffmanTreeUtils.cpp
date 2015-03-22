@@ -52,8 +52,8 @@ namespace gw2dt {
 					int16_t aCurrentSymbol = ioWorkingBitTab[aNbBits];
 					while ( aCurrentSymbol != -1 ) {
 						// Processing hash values
-						uint16_t aHashValue = aCode << ( MaxNbBitsHash - aNbBits );
-						uint16_t aNextHashValue = ( aCode + 1 ) << ( MaxNbBitsHash - aNbBits );
+						uint16_t aHashValue = static_cast<uint16_t> ( aCode << ( MaxNbBitsHash - aNbBits ) );
+						uint16_t aNextHashValue = static_cast<uint16_t> ( ( aCode + 1 ) << ( MaxNbBitsHash - aNbBits ) );
 
 						while ( aHashValue < aNextHashValue ) {
 							ioHuffmanTree.symbolValueHashTab[aHashValue] = aCurrentSymbol;

@@ -125,7 +125,7 @@ namespace gw2dt {
 
 						//additional bits
 						if ( aCodeDiv4.quot > 1 && aSymbol != 28 ) {
-							uint8_t aWriteSizeAddBits = aCodeDiv4.quot - 1;
+							uint8_t aWriteSizeAddBits = static_cast<uint8_t> ( aCodeDiv4.quot - 1 );
 							uint32_t aWriteSizeAdd;
 							ioInputBitArray.read( aWriteSizeAddBits, aWriteSizeAdd );
 							aWriteSize |= aWriteSizeAdd;
@@ -150,7 +150,7 @@ namespace gw2dt {
 
 						//additional bits
 						if ( aCodeDiv2.quot > 1 ) {
-							uint8_t aWriteOffsetAddBits = aCodeDiv2.quot - 1;
+							uint8_t aWriteOffsetAddBits = static_cast<uint8_t> ( aCodeDiv2.quot - 1 );
 							uint32_t aWriteOffsetAdd;
 							ioInputBitArray.read( aWriteOffsetAddBits, aWriteOffsetAdd );
 							aWriteOffset |= aWriteOffsetAdd;

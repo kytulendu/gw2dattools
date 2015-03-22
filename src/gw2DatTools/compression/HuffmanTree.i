@@ -109,8 +109,8 @@ namespace gw2dt {
 
 					while ( anExistence ) {
 						// Processing hash values
-						uint16_t aHashValue = aCode << ( sNbBitsHash - aNbBits );
-						uint16_t aNextHashValue = ( aCode + 1 ) << ( sNbBitsHash - aNbBits );
+						uint16_t aHashValue = static_cast<uint16_t> ( aCode << ( sNbBitsHash - aNbBits ) );
+						uint16_t aNextHashValue = static_cast<uint16_t> ( ( aCode + 1 ) << ( sNbBitsHash - aNbBits ) );
 
 						while ( aHashValue < aNextHashValue ) {
 							oHuffmanTree._symbolValueHashExistenceArray[aHashValue] = true;

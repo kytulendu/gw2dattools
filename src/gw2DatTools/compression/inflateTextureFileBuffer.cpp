@@ -179,7 +179,7 @@ namespace gw2dt {
 
 			void decodeConstantAlphaFrom4Bits( State& ioState, std::vector<bool>& ioAlphaBitMap, const FullFormat& iFullFormat, uint8_t* ioOutputTab ) {
 				needBits( ioState, 4 );
-				uint8_t aAlphaValueByte = readBits( ioState, 4 );
+				uint8_t aAlphaValueByte = static_cast<uint8_t> ( readBits( ioState, 4 ) );
 				dropBits( ioState, 4 );
 
 				uint32_t aPixelBlockPos = 0;
@@ -199,7 +199,7 @@ namespace gw2dt {
 					uint32_t aValue = readBits( ioState, 1 );
 					dropBits( ioState, 1 );
 
-					uint8_t isNotNull = readBits( ioState, 1 );
+					uint8_t isNotNull = static_cast<uint8_t>( readBits( ioState, 1 ) );
 					if ( aValue ) {
 						dropBits( ioState, 1 );
 					}
@@ -222,7 +222,7 @@ namespace gw2dt {
 
 			void decodeConstantAlphaFrom8Bits( State& ioState, std::vector<bool>& ioAlphaBitMap, const FullFormat& iFullFormat, uint8_t* ioOutputTab ) {
 				needBits( ioState, 8 );
-				uint8_t aAlphaValueByte = readBits( ioState, 8 );
+				uint8_t aAlphaValueByte = static_cast<uint8_t> ( readBits( ioState, 8 ) );
 				dropBits( ioState, 8 );
 
 				uint32_t aPixelBlockPos = 0;
@@ -239,7 +239,7 @@ namespace gw2dt {
 					uint32_t aValue = readBits( ioState, 1 );
 					dropBits( ioState, 1 );
 
-					uint8_t isNotNull = readBits( ioState, 1 );
+					uint8_t isNotNull = static_cast<uint8_t> ( readBits( ioState, 1 ) );
 					if ( aValue ) {
 						dropBits( ioState, 1 );
 					}
@@ -262,17 +262,17 @@ namespace gw2dt {
 
 			void decodePlainColor( State& ioState, std::vector<bool>& ioColorBitMap, const FullFormat& iFullFormat, uint8_t* ioOutputTab ) {
 				needBits( ioState, 24 );
-				uint16_t aBlue = readBits( ioState, 8 );
+				uint16_t aBlue = static_cast<uint16_t> ( readBits( ioState, 8 ) );
 				dropBits( ioState, 8 );
-				uint16_t aGreen = readBits( ioState, 8 );
+				uint16_t aGreen = static_cast<uint16_t> ( readBits( ioState, 8 ) );
 				dropBits( ioState, 8 );
-				uint16_t aRed = readBits( ioState, 8 );
+				uint16_t aRed = static_cast<uint16_t> ( readBits( ioState, 8 ) );
 				dropBits( ioState, 8 );
 
 				// TEMP
 
-				uint8_t aRedTemp1 = ( aRed - ( aRed >> 5 ) ) >> 3;
-				uint8_t aBlueTemp1 = ( aBlue - ( aBlue >> 5 ) ) >> 3;
+				uint8_t aRedTemp1 = static_cast<uint8_t> ( ( aRed - ( aRed >> 5 ) ) >> 3 );
+				uint8_t aBlueTemp1 = static_cast<uint8_t> ( ( aBlue - ( aBlue >> 5 ) ) >> 3 );
 
 				uint16_t aGreenTemp1 = ( aGreen - ( aGreen >> 6 ) ) >> 2;
 
@@ -583,9 +583,9 @@ namespace gw2dt {
 
 				// Getting width/height
 				needBits( aState, 32 );
-				aFullFormat.width = readBits( aState, 16 );
+				aFullFormat.width = static_cast<uint16_t> ( readBits( aState, 16 ) );
 				dropBits( aState, 16 );
-				aFullFormat.height = readBits( aState, 16 );
+				aFullFormat.height = static_cast<uint16_t> ( readBits( aState, 16 ) );
 				dropBits( aState, 16 );
 
 				aFullFormat.nbObPixelBlocks = ( ( aFullFormat.width + 3 ) / 4 ) * ( ( aFullFormat.height + 3 ) / 4 );
