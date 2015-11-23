@@ -1,5 +1,5 @@
 ==================================================
- Chunk: GRMT, versions: 7, strucTab: 0x11D28A0
+ Chunk: GRMT, versions: 7, strucTab: 0x13A2150
 ==================================================
 => Version: 6
 typedef struct
@@ -97,9 +97,9 @@ typedef struct
 
 
 ==================================================
- Chunk: DX9S, versions: 12, strucTab: 0x11D2900
+ Chunk: DX9S, versions: 12, strucTab: 0x13A21B0
 ==================================================
-=> Version: 11, ReferencedFunction: 0x803300
+=> Version: 11, ReferencedFunction: 0x7AA970
 typedef struct
 {
     dword textureIndex;
@@ -196,7 +196,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START AmatDx9TechniqueV10 techniques TSTRUCT_ARRAY_PTR_END;
 } AmatDx9MaterialV10<optimize=false>;
 
-=> Version: 9, ReferencedFunction: 0x803940
+=> Version: 9, ReferencedFunction: 0x7AAFB0
 typedef struct
 {
     dword textureIndex;
@@ -243,7 +243,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START AmatDx9TechniqueV9 techniques TSTRUCT_ARRAY_PTR_END;
 } AmatDx9MaterialV9<optimize=false>;
 
-=> Version: 8, ReferencedFunction: 0x803710
+=> Version: 8, ReferencedFunction: 0x7AAD80
 typedef struct
 {
     dword textureIndex;
@@ -289,7 +289,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START AmatDx9TechniqueV8 techniques TSTRUCT_ARRAY_PTR_END;
 } AmatDx9MaterialV8<optimize=false>;
 
-=> Version: 7, ReferencedFunction: 0x803690
+=> Version: 7, ReferencedFunction: 0x7AAD00
 typedef struct
 {
     dword textureIndex;
@@ -335,7 +335,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START AmatDx9TechniqueV7 techniques TSTRUCT_ARRAY_PTR_END;
 } AmatDx9MaterialV7<optimize=false>;
 
-=> Version: 6, ReferencedFunction: 0x803640
+=> Version: 6, ReferencedFunction: 0x7AACB0
 typedef struct
 {
     dword textureIndex;
@@ -381,7 +381,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START AmatDx9TechniqueV6 techniques TSTRUCT_ARRAY_PTR_END;
 } AmatDx9MaterialV6<optimize=false>;
 
-=> Version: 5, ReferencedFunction: 0x803550
+=> Version: 5, ReferencedFunction: 0x7AABC0
 typedef struct
 {
     dword textureIndex;
@@ -522,7 +522,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START AmatDx9TechniqueV3 techniques TSTRUCT_ARRAY_PTR_END;
 } AmatDx9MaterialV3<optimize=false>;
 
-=> Version: 2, ReferencedFunction: 0x803320
+=> Version: 2, ReferencedFunction: 0x7AA990
 typedef struct
 {
     dword textureIndex;
@@ -569,7 +569,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START AmatDx9TechniqueV2 techniques TSTRUCT_ARRAY_PTR_END;
 } AmatDx9MaterialV2<optimize=false>;
 
-=> Version: 1, ReferencedFunction: 0x803170
+=> Version: 1, ReferencedFunction: 0x7AA7E0
 typedef struct
 {
     dword textureIndex;
@@ -660,9 +660,9 @@ typedef struct
 
 
 ==================================================
- Chunk: TOOL, versions: 4, strucTab: 0x11D2990
+ Chunk: TOOL, versions: 4, strucTab: 0x13A2240
 ==================================================
-=> Version: 3, ReferencedFunction: 0x803BC0
+=> Version: 3, ReferencedFunction: 0x7AB230
 typedef struct
 {
     dword token;
@@ -693,7 +693,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START AmatToolTexture textures TSTRUCT_ARRAY_PTR_END;
 } AmatToolParams<optimize=false>;
 
-=> Version: 2, ReferencedFunction: 0x803B20
+=> Version: 2, ReferencedFunction: 0x7AB190
 typedef struct
 {
     dword token;
@@ -724,7 +724,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START AmatToolTexture textures TSTRUCT_ARRAY_PTR_END;
 } AmatToolParams<optimize=false>;
 
-=> Version: 1, ReferencedFunction: 0x803AC0
+=> Version: 1, ReferencedFunction: 0x7AB130
 typedef struct
 {
     dword token;
@@ -788,7 +788,7 @@ typedef struct
 
 
 ==================================================
- Chunk: XBXS, versions: 1, strucTab: 0x11D29CC
+ Chunk: XBXS, versions: 1, strucTab: 0x13A227C
 ==================================================
 => Version: 0
 typedef struct
@@ -865,7 +865,7 @@ typedef struct
 
 
 ==================================================
- Chunk: UPDB, versions: 1, strucTab: 0x11D2A44
+ Chunk: UPDB, versions: 1, strucTab: 0x13A2294
 ==================================================
 => Version: 0
 typedef struct
@@ -882,7 +882,7 @@ typedef struct
 
 
 ==================================================
- Chunk: PS3S, versions: 1, strucTab: 0x11D28F4
+ Chunk: PS3S, versions: 1, strucTab: 0x13A21A4
 ==================================================
 => Version: 0
 typedef struct
@@ -976,7 +976,7 @@ typedef struct
 
 
 ==================================================
- Chunk: UPDA, versions: 1, strucTab: 0x11D2A38
+ Chunk: UPDA, versions: 1, strucTab: 0x13A2288
 ==================================================
 => Version: 0
 typedef struct
@@ -993,7 +993,7 @@ typedef struct
 
 
 ==================================================
- Chunk: MRAS, versions: 1, strucTab: 0x11D29C0
+ Chunk: MRAS, versions: 1, strucTab: 0x13A2270
 ==================================================
 => Version: 0
 typedef struct
@@ -1063,7 +1063,7 @@ typedef struct
 
 
 ==================================================
- Chunk: XSHD, versions: 1, strucTab: 0x11D2A68
+ Chunk: XSHD, versions: 1, strucTab: 0x13A22B8
 ==================================================
 => Version: 0
 typedef struct
@@ -1091,7 +1091,7 @@ typedef struct
 
 
 ==================================================
- Chunk: PPSH, versions: 1, strucTab: 0x11D2A50
+ Chunk: PPSH, versions: 1, strucTab: 0x13A22A0
 ==================================================
 => Version: 0
 typedef struct
@@ -1126,7 +1126,7 @@ typedef struct
 
 
 ==================================================
- Chunk: PVSH, versions: 1, strucTab: 0x11D2A5C
+ Chunk: PVSH, versions: 1, strucTab: 0x13A22AC
 ==================================================
 => Version: 0
 typedef struct
@@ -1158,7 +1158,7 @@ typedef struct
 
 
 ==================================================
- Chunk: SPPA, versions: 1, strucTab: 0x11D2A74
+ Chunk: SPPA, versions: 1, strucTab: 0x13A22C4
 ==================================================
 => Version: 0
 typedef struct
@@ -1179,9 +1179,9 @@ typedef struct
 
 
 ==================================================
- Chunk: CDHS, versions: 2, strucTab: 0x11DA630
+ Chunk: CDHS, versions: 2, strucTab: 0x13A9F34
 ==================================================
-=> Version: 1, ReferencedFunction: 0x805520
+=> Version: 1, ReferencedFunction: 0x7AD3B0
 typedef struct
 {
     byte pointWindCount;
@@ -1223,9 +1223,9 @@ typedef struct
 
 
 ==================================================
- Chunk: PGTB, versions: 4, strucTab: 0x11E4F78
+ Chunk: PGTB, versions: 4, strucTab: 0x13B48C0
 ==================================================
-=> Version: 3, ReferencedFunction: 0x867C20
+=> Version: 3, ReferencedFunction: 0x8106C0
 typedef struct
 {
     dword2 rawDims;
@@ -1329,9 +1329,9 @@ typedef struct
 
 
 ==================================================
- Chunk: DATA, versions: 4, strucTab: 0x11E4FA8
+ Chunk: DATA, versions: 4, strucTab: 0x13B48F0
 ==================================================
-=> Version: 3, ReferencedFunction: 0x867DC0
+=> Version: 3, ReferencedFunction: 0x810860
 typedef struct
 {
     dword2 rawDims;
@@ -1425,7 +1425,7 @@ typedef struct
 
 
 ==================================================
- Chunk: txtm, versions: 1, strucTab: 0x120D384
+ Chunk: txtm, versions: 1, strucTab: 0x13E138C
 ==================================================
 => Version: 0
 typedef struct
@@ -1441,7 +1441,7 @@ typedef struct
 
 
 ==================================================
- Chunk: txtp, versions: 1, strucTab: 0x120D39C
+ Chunk: txtp, versions: 1, strucTab: 0x13E13A4
 ==================================================
 => Version: 0
 typedef struct
@@ -1458,7 +1458,7 @@ typedef struct
 
 
 ==================================================
- Chunk: txtv, versions: 1, strucTab: 0x120D3B4
+ Chunk: txtv, versions: 1, strucTab: 0x13E13BC
 ==================================================
 => Version: 0
 typedef struct
@@ -1474,7 +1474,7 @@ typedef struct
 
 
 ==================================================
- Chunk: vari, versions: 1, strucTab: 0x120D3CC
+ Chunk: vari, versions: 1, strucTab: 0x13E13D4
 ==================================================
 => Version: 0
 typedef struct
@@ -1490,8 +1490,328 @@ typedef struct
 
 
 ==================================================
- Chunk: AMSP, versions: 29, strucTab: 0x133C028
+ Chunk: AMSP, versions: 30, strucTab: 0x150F020
 ==================================================
+=> Version: 29
+typedef struct
+{
+    dword type;
+    dword flags;
+    TSTRUCT_ARRAY_PTR_START float property TSTRUCT_ARRAY_PTR_END;
+} DspDataV29<optimize=false>;
+
+typedef struct
+{
+    qword name;
+    dword flags;
+    float volume;
+    TSTRUCT_ARRAY_PTR_START DspDataV29 dsp TSTRUCT_ARRAY_PTR_END;
+} BussDynamicDataV29<optimize=false>;
+
+typedef struct
+{
+    qword name;
+    qword output;
+    dword flags;
+    float normalizeFadeTime;
+    float normalizeThreshold;
+    float normalizeMaxAmp;
+    float compressorThreshold;
+    float compressorAttack;
+    float compressorRelease;
+    float compressorGainMakeup;
+    TPTR_START BussDynamicDataV29 dynamicData TPTR_END;
+} BussDataV29<optimize=false>;
+
+typedef struct
+{
+    float offset;
+    float value;
+} EnvelopePointDataV29<optimize=false>;
+
+typedef struct
+{
+    qword offsetParameter;
+    TSTRUCT_ARRAY_PTR_START EnvelopePointDataV29 envelopePoint TSTRUCT_ARRAY_PTR_END;
+    byte offsetType;
+} EnvelopeDataV29<optimize=false>;
+
+typedef struct
+{
+    float max;
+    float min;
+    byte min;
+} RangeDataV29<optimize=false>;
+
+typedef struct
+{
+    RangeDataV29 time;
+    RangeDataV29 value;
+} RandomParamDataV29<optimize=false>;
+
+typedef struct
+{
+    TPTR_START EnvelopeDataV29 envelopeData TPTR_END;
+    TPTR_START RandomParamDataV29 randomParamData TPTR_END;
+    float value;
+    byte type;
+} DynamicParamDataV29<optimize=false>;
+
+typedef struct
+{
+    float doppler;
+    DynamicParamDataV29 lowPass;
+    DynamicParamDataV29 highPass;
+    DynamicParamDataV29 pan3D;
+    DynamicParamDataV29 reverb;
+    DynamicParamDataV29 spread3D;
+    DynamicParamDataV29 volumeA;
+    DynamicParamDataV29 volumeB;
+    DynamicParamDataV29 lfe;
+} AttenuationDataV29<optimize=false>;
+
+typedef struct
+{
+    qword name;
+    float volume;
+    float nonFocusGain;
+    float lowPass;
+    float highPass;
+    float reverbDirect;
+    float reverbRoom;
+    dword flags;
+    dword minAudible;
+    dword maxAudibleLQ;
+    dword maxAudibleHG;
+} CategoryDynamicDataV29<optimize=false>;
+
+typedef struct
+{
+    qword name;
+    qword volumeGroupName;
+    qword outputBussName;
+    TPTR_START AttenuationDataV29 attenuation TPTR_END;
+    TPTR_START CategoryDynamicDataV29 dynamicData TPTR_END;
+    float focusReserve;
+    float muteFadeTime;
+    dword flags;
+    dword maxAudible;
+    byte maxAudibleBehavior;
+    byte priority;
+} CategoryDataV29<optimize=false>;
+
+typedef struct
+{
+    qword name;
+    dword flags;
+    float absorptionLF;
+    float absorptionMF;
+    float absorptionHF;
+    float occlusion;
+} MaterialDataV29<optimize=false>;
+
+typedef struct
+{
+    qword name;
+    dword flags;
+    TSTRUCT_ARRAY_PTR_START byte byteCode TSTRUCT_ARRAY_PTR_END;
+} MusicConditionDataV29<optimize=false>;
+
+typedef struct
+{
+    qword condition;
+    qword language;
+    float volume;
+    float weight;
+    filename fileName;
+    byte audioType;
+    byte noteBase;
+    byte noteMin;
+    byte noteMax;
+} FileNameDataV29<optimize=false>;
+
+typedef struct
+{
+    qword category;
+    qword name;
+    qword primaryPlaylistId;
+    qword secondaryPlaylistId;
+    TSTRUCT_ARRAY_PTR_START FileNameDataV29 fileName TSTRUCT_ARRAY_PTR_END;
+    float fadeInTime;
+    float fadeOutTime;
+    dword flags;
+    RangeDataV29 initialSilence;
+    RangeDataV29 intervalSilence;
+    RangeDataV29 maxPlayLength;
+    DynamicParamDataV29 volume;
+    byte fileIterateMode;
+} MusicPlaylistDataV29<optimize=false>;
+
+typedef struct
+{
+    qword name;
+    qword tokenValue;
+    float floatValue;
+} PropertyDataV29<optimize=false>;
+
+typedef struct
+{
+    qword name;
+    dword flags;
+    float room;
+    float roomHF;
+    float roomLF;
+    float decayTime;
+    float decayHFRatio;
+    float reflections;
+    float reflectionsDelay;
+    float reverb;
+    float reverbDelay;
+    float referenceHF;
+    float referenceLF;
+    float diffusion;
+    float density;
+    float echoDelay;
+    float echoDecayRatio;
+    float echoWetMix;
+    float echoDryMix;
+} ReverbDataV29<optimize=false>;
+
+typedef struct
+{
+    qword name;
+    filename fileName;
+} ScriptRefDataV29<optimize=false>;
+
+typedef struct
+{
+    qword name;
+    float blendInTime;
+    float blendOutTime;
+    dword flags;
+    TSTRUCT_ARRAY_PTR_START BussDynamicDataV29 buss TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START CategoryDynamicDataV29 category TSTRUCT_ARRAY_PTR_END;
+    byte priority;
+} SnapshotDataV29<optimize=false>;
+
+typedef struct
+{
+    qword name;
+    wchar_ptr externalPlaylist;
+} MusicExternalDataV29<optimize=false>;
+
+typedef struct
+{
+    qword defaultSnapshot;
+    qword effectsBuss;
+    float distanceScale;
+    float dopplerScale;
+    float echoLevel;
+    float focusTransition;
+    float memoryPool;
+    float reverbLevel;
+    dword minChannelsLQ;
+    dword maxChannelsLQ;
+    TSTRUCT_ARRAY_PTR_START BussDataV29 buss TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START CategoryDataV29 category TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START MaterialDataV29 material TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START MusicConditionDataV29 musicCondition TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START MusicPlaylistDataV29 musicPlaylist TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START PropertyDataV29 property TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START ReverbDataV29 reverb TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START ScriptRefDataV29 scriptRef TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START SnapshotDataV29 snapshot TSTRUCT_ARRAY_PTR_END;
+    filename bankIndexFileName;
+    filename bankScriptFileName;
+    filename musicScriptFileName;
+    TSTRUCT_ARRAY_PTR_START MusicExternalDataV29 musicExternal TSTRUCT_ARRAY_PTR_END;
+} AudioSettingsDataV29<optimize=false>;
+
+typedef struct
+{
+    qword name;
+    dword flags;
+    TSTRUCT_ARRAY_PTR_START byte byteCode TSTRUCT_ARRAY_PTR_END;
+} HandlerDataV29<optimize=false>;
+
+typedef struct
+{
+    qword category;
+    qword endCue;
+    qword name;
+    qword offsetBone;
+    qword playlistId;
+    TSTRUCT_ARRAY_PTR_START DspDataV29 dsp TSTRUCT_ARRAY_PTR_END;
+    TPTR_START AttenuationDataV29 attenuation TPTR_END;
+    TSTRUCT_ARRAY_PTR_START FileNameDataV29 fileName TSTRUCT_ARRAY_PTR_END;
+    float channelFadeIn;
+    float channelFadeOut;
+    float endCueOffset;
+    float fadeInTime;
+    float fadeOutTime;
+    float3 positionOffset;
+    dword channelMax;
+    dword flags;
+    dword loopCount;
+    DynamicParamDataV29 depth;
+    DynamicParamDataV29 pan;
+    DynamicParamDataV29 pitch;
+    DynamicParamDataV29 pitchMS;
+    DynamicParamDataV29 volume;
+    DynamicParamDataV29 volumeMS;
+    RangeDataV29 initialDelay;
+    RangeDataV29 playLength;
+    RangeDataV29 positionOffsetAngle;
+    RangeDataV29 positionRange;
+    RangeDataV29 repeatCount;
+    RangeDataV29 repeatTime;
+    RangeDataV29 replayDelay;
+    RangeDataV29 startTimeOffset;
+    byte channelMode;
+    byte channelPriority;
+    byte fileIterateMode;
+    byte loopMode;
+    byte musicPriority;
+    byte playbackMode;
+    byte positionMode;
+    byte repeatTimeFrom;
+} MetaSoundDataV29<optimize=false>;
+
+typedef struct
+{
+    qword cue;
+    qword end;
+    float time;
+    byte type;
+} TriggerMarkerDataV29<optimize=false>;
+
+typedef struct
+{
+    qword name;
+    TSTRUCT_ARRAY_PTR_START TriggerMarkerDataV29 triggerMarker TSTRUCT_ARRAY_PTR_END;
+} TriggerKeyDataV29<optimize=false>;
+
+typedef struct
+{
+    qword musicCue;
+    qword reverbOverride;
+    qword snapshot;
+    TPTR_START AudioSettingsDataV29 audioSettings TPTR_END;
+    TSTRUCT_ARRAY_PTR_START HandlerDataV29 handler TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START MetaSoundDataV29 metaSound TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START ScriptRefDataV29 scriptRef TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START TriggerKeyDataV29 triggerKey TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START PropertyDataV29 property TSTRUCT_ARRAY_PTR_END;
+    dword flags;
+    dword soundPoolCount;
+    float fadeInTime;
+    float soundPoolDelay;
+    float volume;
+    byte musicCuePriority;
+    byte musicMutePriority;
+    byte soundPoolMode;
+} ScriptFileDataV29<optimize=false>;
+
 => Version: 28
 typedef struct
 {
@@ -4012,7 +4332,7 @@ typedef struct
     byte musicCuePriority;
 } ScriptFileDataV20<optimize=false>;
 
-=> Version: 19, ReferencedFunction: 0xE93670
+=> Version: 19, ReferencedFunction: 0xF58540
 typedef struct
 {
     dword type;
@@ -4249,7 +4569,7 @@ typedef struct
     byte musicCuePriority;
 } ScriptFileDataV19<optimize=false>;
 
-=> Version: 18, ReferencedFunction: 0xE93530
+=> Version: 18, ReferencedFunction: 0xF58710
 typedef struct
 {
     dword type;
@@ -5640,7 +5960,7 @@ typedef struct
     byte musicCuePriority;
 } ScriptFileDataV13<optimize=false>;
 
-=> Version: 12, ReferencedFunction: 0xE93510
+=> Version: 12, ReferencedFunction: 0xF586F0
 typedef struct
 {
     dword type;
@@ -6776,7 +7096,7 @@ typedef struct
     float volume;
 } ScriptFileDataV8<optimize=false>;
 
-=> Version: 7, ReferencedFunction: 0xE934A0
+=> Version: 7, ReferencedFunction: 0xF58680
 typedef struct
 {
     dword type;
@@ -8184,7 +8504,7 @@ typedef struct
 
 
 ==================================================
- Chunk: BKCK, versions: 3, strucTab: 0x133CA7C
+ Chunk: BKCK, versions: 3, strucTab: 0x150F690
 ==================================================
 => Version: 2
 typedef struct
@@ -8262,7 +8582,7 @@ typedef struct
 
 
 ==================================================
- Chunk: BIDX, versions: 1, strucTab: 0x133CDF8
+ Chunk: BIDX, versions: 1, strucTab: 0x150F92C
 ==================================================
 => Version: 0
 typedef struct
@@ -8282,7 +8602,7 @@ typedef struct
 
 
 ==================================================
- Chunk: ASND, versions: 3, strucTab: 0x133CE9C
+ Chunk: ASND, versions: 3, strucTab: 0x150FAF0
 ==================================================
 => Version: 2
 typedef struct
@@ -8317,7 +8637,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START byte otherData TSTRUCT_ARRAY_PTR_END;
 } WaveformDataV2<optimize=false>;
 
-=> Version: 1, ReferencedFunction: 0xE93740
+=> Version: 1, ReferencedFunction: 0xF58610
 typedef struct
 {
     float length;
@@ -8355,9 +8675,9 @@ typedef struct
 
 
 ==================================================
- Chunk: CSCN, versions: 37, strucTab: 0x135B300
+ Chunk: CSCN, versions: 37, strucTab: 0x152B2B0
 ==================================================
-=> Version: 36, ReferencedFunction: 0xEA8E40
+=> Version: 36, ReferencedFunction: 0xF6E780
 typedef struct
 {
     qword value;
@@ -8625,7 +8945,7 @@ typedef struct
     TPTR_START TrackGroupDataV35 trackGroup TPTR_END;
 } SceneDataV35<optimize=false>;
 
-=> Version: 34, ReferencedFunction: 0xEA8DA0
+=> Version: 34, ReferencedFunction: 0xF6E6E0
 typedef struct
 {
     qword value;
@@ -8758,7 +9078,7 @@ typedef struct
     TPTR_START TrackGroupDataV34 trackGroup TPTR_END;
 } SceneDataV34<optimize=false>;
 
-=> Version: 33, ReferencedFunction: 0xEA8D00
+=> Version: 33, ReferencedFunction: 0xF6E640
 typedef struct
 {
     qword value;
@@ -8884,7 +9204,7 @@ typedef struct
     TPTR_START TrackGroupDataV33 trackGroup TPTR_END;
 } SceneDataV33<optimize=false>;
 
-=> Version: 32, ReferencedFunction: 0xEA8C60
+=> Version: 32, ReferencedFunction: 0xF6E5A0
 typedef struct
 {
     qword value;
@@ -9010,7 +9330,7 @@ typedef struct
     TPTR_START TrackGroupDataV32 trackGroup TPTR_END;
 } SceneDataV32<optimize=false>;
 
-=> Version: 31, ReferencedFunction: 0xEA8BC0
+=> Version: 31, ReferencedFunction: 0xF6E500
 typedef struct
 {
     qword value;
@@ -9136,7 +9456,7 @@ typedef struct
     TPTR_START TrackGroupDataV31 trackGroup TPTR_END;
 } SceneDataV31<optimize=false>;
 
-=> Version: 30, ReferencedFunction: 0xEA8B70
+=> Version: 30, ReferencedFunction: 0xF6E4B0
 typedef struct
 {
     qword value;
@@ -9389,7 +9709,7 @@ typedef struct
     TPTR_START TrackGroupDataV29 trackGroup TPTR_END;
 } SceneDataV29<optimize=false>;
 
-=> Version: 28, ReferencedFunction: 0xEA8AD0
+=> Version: 28, ReferencedFunction: 0xF6E410
 typedef struct
 {
     qword value;
@@ -9515,7 +9835,7 @@ typedef struct
     TPTR_START TrackGroupDataV28 trackGroup TPTR_END;
 } SceneDataV28<optimize=false>;
 
-=> Version: 27, ReferencedFunction: 0xEA8A30
+=> Version: 27, ReferencedFunction: 0xF6E370
 typedef struct
 {
     qword value;
@@ -9641,7 +9961,7 @@ typedef struct
     TPTR_START TrackGroupDataV27 trackGroup TPTR_END;
 } SceneDataV27<optimize=false>;
 
-=> Version: 26, ReferencedFunction: 0xEA8990
+=> Version: 26, ReferencedFunction: 0xF6E2D0
 typedef struct
 {
     qword value;
@@ -9767,7 +10087,7 @@ typedef struct
     TPTR_START TrackGroupDataV26 trackGroup TPTR_END;
 } SceneDataV26<optimize=false>;
 
-=> Version: 25, ReferencedFunction: 0xEA88F0
+=> Version: 25, ReferencedFunction: 0xF6E230
 typedef struct
 {
     qword value;
@@ -9893,7 +10213,7 @@ typedef struct
     TPTR_START TrackGroupDataV25 trackGroup TPTR_END;
 } SceneDataV25<optimize=false>;
 
-=> Version: 24, ReferencedFunction: 0xEA8850
+=> Version: 24, ReferencedFunction: 0xF6E190
 typedef struct
 {
     qword value;
@@ -10144,7 +10464,7 @@ typedef struct
     TPTR_START TrackGroupDataV23 trackGroup TPTR_END;
 } SceneDataV23<optimize=false>;
 
-=> Version: 22, ReferencedFunction: 0xEA87B0
+=> Version: 22, ReferencedFunction: 0xF6E0F0
 typedef struct
 {
     qword value;
@@ -10392,7 +10712,7 @@ typedef struct
     TPTR_START TrackGroupDataV21 trackGroup TPTR_END;
 } SceneDataV21<optimize=false>;
 
-=> Version: 20, ReferencedFunction: 0xEA8710
+=> Version: 20, ReferencedFunction: 0xF6E050
 typedef struct
 {
     qword value;
@@ -10515,7 +10835,7 @@ typedef struct
     ResourceDataV20 resources;
 } SceneDataV20<optimize=false>;
 
-=> Version: 19, ReferencedFunction: 0xEA8670
+=> Version: 19, ReferencedFunction: 0xF6DFB0
 typedef struct
 {
     qword value;
@@ -10638,7 +10958,7 @@ typedef struct
     ResourceDataV19 resources;
 } SceneDataV19<optimize=false>;
 
-=> Version: 18, ReferencedFunction: 0xEA8670
+=> Version: 18, ReferencedFunction: 0xF6DFB0
 typedef struct
 {
     qword value;
@@ -10761,7 +11081,7 @@ typedef struct
     ResourceDataV18 resources;
 } SceneDataV18<optimize=false>;
 
-=> Version: 17, ReferencedFunction: 0xEA85D0
+=> Version: 17, ReferencedFunction: 0xF6DF10
 typedef struct
 {
     qword value;
@@ -10884,7 +11204,7 @@ typedef struct
     ResourceDataV17 resources;
 } SceneDataV17<optimize=false>;
 
-=> Version: 16, ReferencedFunction: 0xEA8530
+=> Version: 16, ReferencedFunction: 0xF6DE70
 typedef struct
 {
     qword value;
@@ -11252,7 +11572,7 @@ typedef struct
     ResourceDataV14 resources;
 } SceneDataV14<optimize=false>;
 
-=> Version: 13, ReferencedFunction: 0xEA84B0
+=> Version: 13, ReferencedFunction: 0xF6DDF0
 typedef struct
 {
     qword value;
@@ -11373,7 +11693,7 @@ typedef struct
     ResourceDataV13 resources;
 } SceneDataV13<optimize=false>;
 
-=> Version: 12, ReferencedFunction: 0xEA83C0
+=> Version: 12, ReferencedFunction: 0xF6DD00
 typedef struct
 {
     qword value;
@@ -11494,7 +11814,7 @@ typedef struct
     ResourceDataV12 resources;
 } SceneDataV12<optimize=false>;
 
-=> Version: 11, ReferencedFunction: 0xEA8320
+=> Version: 11, ReferencedFunction: 0xF6DC60
 typedef struct
 {
     byte type;
@@ -11615,7 +11935,7 @@ typedef struct
     ResourceDataV11 resources;
 } SceneDataV11<optimize=false>;
 
-=> Version: 10, ReferencedFunction: 0xEA82C0
+=> Version: 10, ReferencedFunction: 0xF6DC00
 typedef struct
 {
     byte type;
@@ -11736,7 +12056,7 @@ typedef struct
     ResourceDataV10 resources;
 } SceneDataV10<optimize=false>;
 
-=> Version: 9, ReferencedFunction: 0xEA8210
+=> Version: 9, ReferencedFunction: 0xF6DB50
 typedef struct
 {
     byte type;
@@ -11977,7 +12297,7 @@ typedef struct
     ResourceDataV8 resources;
 } SceneDataV8<optimize=false>;
 
-=> Version: 7, ReferencedFunction: 0xEA8130
+=> Version: 7, ReferencedFunction: 0xF6DA70
 typedef struct
 {
     byte type;
@@ -12090,7 +12410,7 @@ typedef struct
     ResourceDataV7 resources;
 } SceneDataV7<optimize=false>;
 
-=> Version: 6, ReferencedFunction: 0xEA8060
+=> Version: 6, ReferencedFunction: 0xF6D9A0
 typedef struct
 {
     byte type;
@@ -12203,7 +12523,7 @@ typedef struct
     ResourceDataV6 resources;
 } SceneDataV6<optimize=false>;
 
-=> Version: 5, ReferencedFunction: 0xEA7FC0
+=> Version: 5, ReferencedFunction: 0xF6D900
 typedef struct
 {
     byte type;
@@ -12316,7 +12636,7 @@ typedef struct
     ResourceDataV5 resources;
 } SceneDataV5<optimize=false>;
 
-=> Version: 4, ReferencedFunction: 0xEA7F20
+=> Version: 4, ReferencedFunction: 0xF6D860
 typedef struct
 {
     byte type;
@@ -12429,7 +12749,7 @@ typedef struct
     ResourceDataV4 resources;
 } SceneDataV4<optimize=false>;
 
-=> Version: 3, ReferencedFunction: 0xEA7E80
+=> Version: 3, ReferencedFunction: 0xF6D7C0
 typedef struct
 {
     byte type;
@@ -12653,7 +12973,7 @@ typedef struct
     ResourceDataV2 resources;
 } SceneDataV2<optimize=false>;
 
-=> Version: 1, ReferencedFunction: 0xEA7D70
+=> Version: 1, ReferencedFunction: 0xF6D6B0
 typedef struct
 {
     byte type;
@@ -12870,9 +13190,72 @@ typedef struct
 
 
 ==================================================
- Chunk: area, versions: 5, strucTab: 0x1391FFC
+ Chunk: shad, versions: 2, strucTab: 0x156A338
 ==================================================
-=> Version: 4, ReferencedFunction: 0xF2DB10
+=> Version: 1, ReferencedFunction: 0xFF85E0
+typedef struct
+{
+    dword compressionMode;
+    TSTRUCT_ARRAY_PTR_START byte bytes TSTRUCT_ARRAY_PTR_END;
+} PackMapShadowTileV1<optimize=false>;
+
+typedef struct
+{
+    dword2 shadowDims;
+    dword2 tileDims;
+    TSTRUCT_ARRAY_PTR_START PackMapShadowTileV1 tiles TSTRUCT_ARRAY_PTR_END;
+    float worldToShadow[16];
+    float2 s;
+    float2 t;
+    float2 u;
+    float3 shadowEye;
+    float3 shadowDir;
+    float3 shadowUp;
+} PackMapShadowV1<optimize=false>;
+
+=> Version: 0
+typedef struct
+{
+    dword compressionMode;
+    TSTRUCT_ARRAY_PTR_START byte bytes TSTRUCT_ARRAY_PTR_END;
+} PackMapShadowTileV0<optimize=false>;
+
+typedef struct
+{
+    dword2 shadowDims;
+    dword2 tileDims;
+    TSTRUCT_ARRAY_PTR_START PackMapShadowTileV0 tiles TSTRUCT_ARRAY_PTR_END;
+    float worldToShadow[16];
+    float2 s;
+    float2 t;
+    float2 u;
+} PackMapShadowV0<optimize=false>;
+
+
+==================================================
+ Chunk: pack, versions: 1, strucTab: 0x156EAD4
+==================================================
+=> Version: 0
+typedef struct
+{
+    wchar_ptr file;
+    wchar_ptr name;
+    qword token;
+    dword flags;
+} MapVariant<optimize=false>;
+
+typedef struct
+{
+    filename baseFile;
+    TSTRUCT_ARRAY_PTR_START MapVariant variants TSTRUCT_ARRAY_PTR_END;
+    dword flags;
+} MapPackage<optimize=false>;
+
+
+==================================================
+ Chunk: area, versions: 5, strucTab: 0x156AE48
+==================================================
+=> Version: 4, ReferencedFunction: 0xFF7840
 typedef struct
 {
     TSTRUCT_ARRAY_PTR_START float3 points TSTRUCT_ARRAY_PTR_END;
@@ -13006,7 +13389,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START PackMapAreaToolV2 areaTools TSTRUCT_ARRAY_PTR_END;
 } PackMapAreasV2<optimize=false>;
 
-=> Version: 1, ReferencedFunction: 0xF2DB00
+=> Version: 1, ReferencedFunction: 0xFF7830
 typedef struct
 {
     TSTRUCT_ARRAY_PTR_START float3 points TSTRUCT_ARRAY_PTR_END;
@@ -13067,7 +13450,7 @@ typedef struct
 
 
 ==================================================
- Chunk: audi, versions: 9, strucTab: 0x13927A8
+ Chunk: audi, versions: 9, strucTab: 0x156B290
 ==================================================
 => Version: 8
 typedef struct
@@ -13209,7 +13592,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START PackMapAudioRegion audioRegions TSTRUCT_ARRAY_PTR_END;
 } MapAudio<optimize=false>;
 
-=> Version: 4, ReferencedFunction: 0xF2C4A0
+=> Version: 4, ReferencedFunction: 0xFF6AE0
 typedef struct
 {
     dword regionType;
@@ -13242,7 +13625,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START PackMapAudioRegion audioRegions TSTRUCT_ARRAY_PTR_END;
 } MapAudio<optimize=false>;
 
-=> Version: 3, ReferencedFunction: 0xF2C390
+=> Version: 3, ReferencedFunction: 0xFF69D0
 typedef struct
 {
     dword regionType;
@@ -13331,7 +13714,7 @@ typedef struct
 
 
 ==================================================
- Chunk: bloc, versions: 1, strucTab: 0x13931D0
+ Chunk: bloc, versions: 1, strucTab: 0x156C6E0
 ==================================================
 => Version: 0
 typedef struct
@@ -13347,7 +13730,52 @@ typedef struct
 
 
 ==================================================
- Chunk: cube, versions: 4, strucTab: 0x13933E0
+ Chunk: cng, versions: 1, strucTab: 0x156C354
+==================================================
+=> Version: 0
+typedef struct
+{
+    dword materialId;
+    float3 bottomLeftBound;
+    float3 topRightBound;
+    float3 centroid;
+    TSTRUCT_ARRAY_PTR_START dword faces TSTRUCT_ARRAY_PTR_END;
+} PackMapCoarseNavGraphNodeV0<optimize=false>;
+
+typedef struct
+{
+    float3 edgeStart;
+    float3 edgeEnd;
+} PackMapCoarseNavGraphConnectionEdgeV0<optimize=false>;
+
+typedef struct
+{
+    dword targetSectionUid;
+    dword targetNodeIndex;
+    TSTRUCT_ARRAY_PTR_START PackMapCoarseNavGraphConnectionEdgeV0 edges TSTRUCT_ARRAY_PTR_END;
+} PackMapCoarseNavGraphConnectionV0<optimize=false>;
+
+typedef struct
+{
+    dword nodeIndex;
+    TSTRUCT_ARRAY_PTR_START PackMapCoarseNavGraphConnectionV0 connections TSTRUCT_ARRAY_PTR_END;
+} PackMapCoarseNavGraphNodeConnectionsV0<optimize=false>;
+
+typedef struct
+{
+    dword sectionUid;
+    TSTRUCT_ARRAY_PTR_START PackMapCoarseNavGraphNodeV0 nodes TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START PackMapCoarseNavGraphNodeConnectionsV0 nodeConnections TSTRUCT_ARRAY_PTR_END;
+} PackMapCoarseNavGraphSectionV0<optimize=false>;
+
+typedef struct
+{
+    TSTRUCT_ARRAY_PTR_START PackMapCoarseNavGraphSectionV0 sections TSTRUCT_ARRAY_PTR_END;
+} PackMapCoarseNavGraphV0<optimize=false>;
+
+
+==================================================
+ Chunk: cube, versions: 4, strucTab: 0x156C868
 ==================================================
 => Version: 3
 typedef struct
@@ -13375,7 +13803,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START PackMapCubeMapParamsV3 paramsArray TSTRUCT_ARRAY_PTR_END;
 } PackMapCubeMapV3<optimize=false>;
 
-=> Version: 2, ReferencedFunction: 0x5DBD20
+=> Version: 2, ReferencedFunction: 0x451BC0
 typedef struct
 {
     float3 position;
@@ -13399,7 +13827,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START PackMapCubeMapParamsV2 paramsArray TSTRUCT_ARRAY_PTR_END;
 } PackMapCubeMapV2<optimize=false>;
 
-=> Version: 1, ReferencedFunction: 0xF2DB50
+=> Version: 1, ReferencedFunction: 0xFF4D20
 typedef struct
 {
     float3 position;
@@ -13446,9 +13874,9 @@ typedef struct
 
 
 ==================================================
- Chunk: havk, versions: 15, strucTab: 0x1392BC8
+ Chunk: havk, versions: 15, strucTab: 0x156BDE8
 ==================================================
-=> Version: 14, ReferencedFunction: 0xF2A2D0
+=> Version: 14, ReferencedFunction: 0xFF4750
 typedef struct
 {
     TSTRUCT_ARRAY_PTR_START byte moppData TSTRUCT_ARRAY_PTR_END;
@@ -13526,7 +13954,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START PackMapCollideModelZoneV14 zoneModels TSTRUCT_ARRAY_PTR_END;
 } PackMapCollideV14<optimize=false>;
 
-=> Version: 13, ReferencedFunction: 0xF2A060
+=> Version: 13, ReferencedFunction: 0xFF44B0
 typedef struct
 {
     TSTRUCT_ARRAY_PTR_START word indices TSTRUCT_ARRAY_PTR_END;
@@ -13854,7 +14282,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START PackMapCollideAiChunkV9 aiChunks TSTRUCT_ARRAY_PTR_END;
 } PackMapCollideV9<optimize=false>;
 
-=> Version: 8, ReferencedFunction: 0xF2A340
+=> Version: 8, ReferencedFunction: 0xFF47C0
 typedef struct
 {
     TSTRUCT_ARRAY_PTR_START word indices TSTRUCT_ARRAY_PTR_END;
@@ -14042,9 +14470,9 @@ typedef struct
 
 
 ==================================================
- Chunk: env, versions: 76, strucTab: 0x13949E0
+ Chunk: env, versions: 76, strucTab: 0x156E100
 ==================================================
-=> Version: 75, ReferencedFunction: 0xF29FD0
+=> Version: 75, ReferencedFunction: 0xFF6940
 typedef struct
 {
     byte3 color;
@@ -15480,7 +15908,7 @@ typedef struct
     TPTR_START PackMapEnvDataGlobalV72 dataGlobal TPTR_END;
 } PackMapEnvironmentV72<optimize=false>;
 
-=> Version: 71, ReferencedFunction: 0xF29F30
+=> Version: 71, ReferencedFunction: 0xFF68A0
 typedef struct
 {
     byte3 color;
@@ -15801,7 +16229,7 @@ typedef struct
     TPTR_START PackMapEnvDataGlobalV71 dataGlobal TPTR_END;
 } PackMapEnvironmentV71<optimize=false>;
 
-=> Version: 70, ReferencedFunction: 0xF29EE0
+=> Version: 70, ReferencedFunction: 0xFF6850
 typedef struct
 {
     byte3 color;
@@ -16439,7 +16867,7 @@ typedef struct
     TPTR_START PackMapEnvDataGlobalV69 dataGlobal TPTR_END;
 } PackMapEnvironmentV69<optimize=false>;
 
-=> Version: 68, ReferencedFunction: 0xF29DC0
+=> Version: 68, ReferencedFunction: 0xFF6730
 typedef struct
 {
     byte3 color;
@@ -17078,7 +17506,7 @@ typedef struct
     TPTR_START PackMapEnvDataGlobalV67 dataGlobal TPTR_END;
 } PackMapEnvironmentV67<optimize=false>;
 
-=> Version: 66, ReferencedFunction: 0xF29C70
+=> Version: 66, ReferencedFunction: 0xFF65E0
 typedef struct
 {
     byte3 color;
@@ -17396,7 +17824,7 @@ typedef struct
     TPTR_START PackMapEnvDataGlobalV66 dataGlobal TPTR_END;
 } PackMapEnvironmentV66<optimize=false>;
 
-=> Version: 65, ReferencedFunction: 0xF29C10
+=> Version: 65, ReferencedFunction: 0xFF6580
 typedef struct
 {
     byte3 color;
@@ -17708,7 +18136,7 @@ typedef struct
     TPTR_START PackMapEnvDataGlobalV65 dataGlobal TPTR_END;
 } PackMapEnvironmentV65<optimize=false>;
 
-=> Version: 64, ReferencedFunction: 0xF29B20
+=> Version: 64, ReferencedFunction: 0xFF6490
 typedef struct
 {
     byte3 color;
@@ -18019,7 +18447,7 @@ typedef struct
     TPTR_START PackMapEnvDataGlobalV64 dataGlobal TPTR_END;
 } PackMapEnvironmentV64<optimize=false>;
 
-=> Version: 63, ReferencedFunction: 0xF29A20
+=> Version: 63, ReferencedFunction: 0xFF6390
 typedef struct
 {
     byte3 color;
@@ -18328,7 +18756,7 @@ typedef struct
     TPTR_START PackMapEnvDataGlobalV63 dataGlobal TPTR_END;
 } PackMapEnvironmentV63<optimize=false>;
 
-=> Version: 62, ReferencedFunction: 0xF299F0
+=> Version: 62, ReferencedFunction: 0xFF6360
 typedef struct
 {
     byte3 color;
@@ -18632,7 +19060,7 @@ typedef struct
     TPTR_START PackMapEnvDataGlobalV62 dataGlobal TPTR_END;
 } PackMapEnvironmentV62<optimize=false>;
 
-=> Version: 61, ReferencedFunction: 0xF299C0
+=> Version: 61, ReferencedFunction: 0xFF6330
 typedef struct
 {
     byte3 color;
@@ -18935,7 +19363,7 @@ typedef struct
     TPTR_START PackMapEnvDataGlobalV61 dataGlobal TPTR_END;
 } PackMapEnvironmentV61<optimize=false>;
 
-=> Version: 60, ReferencedFunction: 0xF29990
+=> Version: 60, ReferencedFunction: 0xFF6300
 typedef struct
 {
     byte3 color;
@@ -19237,7 +19665,7 @@ typedef struct
     TPTR_START PackMapEnvDataGlobalV60 dataGlobal TPTR_END;
 } PackMapEnvironmentV60<optimize=false>;
 
-=> Version: 59, ReferencedFunction: 0xF29880
+=> Version: 59, ReferencedFunction: 0xFF61F0
 typedef struct
 {
     byte3 color;
@@ -19538,7 +19966,7 @@ typedef struct
     TPTR_START PackMapEnvDataGlobalV59 dataGlobal TPTR_END;
 } PackMapEnvironmentV59<optimize=false>;
 
-=> Version: 58, ReferencedFunction: 0xF29770
+=> Version: 58, ReferencedFunction: 0xFF60E0
 typedef struct
 {
     byte3 color;
@@ -20139,7 +20567,7 @@ typedef struct
     TPTR_START PackMapEnvDataGlobalV57 dataGlobal TPTR_END;
 } PackMapEnvironmentV57<optimize=false>;
 
-=> Version: 56, ReferencedFunction: 0xF29660
+=> Version: 56, ReferencedFunction: 0xFF5FD0
 typedef struct
 {
     byte3 color;
@@ -20733,7 +21161,7 @@ typedef struct
     TPTR_START PackMapEnvDataGlobalV55 dataGlobal TPTR_END;
 } PackMapEnvironmentV55<optimize=false>;
 
-=> Version: 54, ReferencedFunction: 0xF295B0
+=> Version: 54, ReferencedFunction: 0xFF5F20
 typedef struct
 {
     byte3 color;
@@ -21004,7 +21432,7 @@ typedef struct
     TPTR_START PackMapEnvDataGlobalV54 dataGlobal TPTR_END;
 } PackMapEnvironmentV54<optimize=false>;
 
-=> Version: 53, ReferencedFunction: 0xF29500
+=> Version: 53, ReferencedFunction: 0xFF5E70
 typedef struct
 {
     byte3 color;
@@ -21275,7 +21703,7 @@ typedef struct
     TPTR_START PackMapEnvDataGlobalV53 dataGlobal TPTR_END;
 } PackMapEnvironmentV53<optimize=false>;
 
-=> Version: 52, ReferencedFunction: 0xF29420
+=> Version: 52, ReferencedFunction: 0xFF5D90
 typedef struct
 {
     byte3 color;
@@ -21812,7 +22240,7 @@ typedef struct
     TPTR_START PackMapEnvDataGlobalV51 dataGlobal TPTR_END;
 } PackMapEnvironmentV51<optimize=false>;
 
-=> Version: 50, ReferencedFunction: 0xF29310
+=> Version: 50, ReferencedFunction: 0xFF5C80
 typedef struct
 {
     byte3 color;
@@ -22077,7 +22505,7 @@ typedef struct
     TPTR_START PackMapEnvDataGlobalV50 dataGlobal TPTR_END;
 } PackMapEnvironmentV50<optimize=false>;
 
-=> Version: 49, ReferencedFunction: 0xF291C0
+=> Version: 49, ReferencedFunction: 0xFF5B30
 typedef struct
 {
     byte3 color;
@@ -23371,7 +23799,7 @@ typedef struct
     TPTR_START PackMapEnvDataGlobalV45 dataGlobal TPTR_END;
 } PackMapEnvironmentV45<optimize=false>;
 
-=> Version: 44, ReferencedFunction: 0xF290B0
+=> Version: 44, ReferencedFunction: 0xFF5A20
 typedef struct
 {
     byte3 color;
@@ -23628,7 +24056,7 @@ typedef struct
     TPTR_START PackMapEnvDataGlobalV44 dataGlobal TPTR_END;
 } PackMapEnvironmentV44<optimize=false>;
 
-=> Version: 43, ReferencedFunction: 0xF29000
+=> Version: 43, ReferencedFunction: 0xFF5970
 typedef struct
 {
     byte3 color;
@@ -23876,7 +24304,7 @@ typedef struct
     TPTR_START PackMapEnvDataGlobalV43 dataGlobal TPTR_END;
 } PackMapEnvironmentV43<optimize=false>;
 
-=> Version: 42, ReferencedFunction: 0xF28F60
+=> Version: 42, ReferencedFunction: 0xFF58D0
 typedef struct
 {
     byte3 color;
@@ -24119,7 +24547,7 @@ typedef struct
     TPTR_START PackMapEnvDataGlobalV42 dataGlobal TPTR_END;
 } PackMapEnvironmentV42<optimize=false>;
 
-=> Version: 41, ReferencedFunction: 0xF28E40
+=> Version: 41, ReferencedFunction: 0xFF57B0
 typedef struct
 {
     byte3 color;
@@ -24361,7 +24789,7 @@ typedef struct
     TPTR_START PackMapEnvDataGlobalV41 dataGlobal TPTR_END;
 } PackMapEnvironmentV41<optimize=false>;
 
-=> Version: 40, ReferencedFunction: 0xF28E00
+=> Version: 40, ReferencedFunction: 0xFF5770
 typedef struct
 {
     byte3 color;
@@ -24840,7 +25268,7 @@ typedef struct
     TPTR_START PackMapEnvDataGlobalV39 dataGlobal TPTR_END;
 } PackMapEnvironmentV39<optimize=false>;
 
-=> Version: 38, ReferencedFunction: 0xF28D60
+=> Version: 38, ReferencedFunction: 0xFF56D0
 typedef struct
 {
     byte3 color;
@@ -25066,7 +25494,7 @@ typedef struct
     TPTR_START PackMapEnvDataGlobalV38 dataGlobal TPTR_END;
 } PackMapEnvironmentV38<optimize=false>;
 
-=> Version: 37, ReferencedFunction: 0xF28CE0
+=> Version: 37, ReferencedFunction: 0xFF5650
 typedef struct
 {
     byte3 color;
@@ -25513,7 +25941,7 @@ typedef struct
     TPTR_START PackMapEnvDataGlobalV36 dataGlobal TPTR_END;
 } PackMapEnvironmentV36<optimize=false>;
 
-=> Version: 35, ReferencedFunction: 0xF28C80
+=> Version: 35, ReferencedFunction: 0xFF55F0
 typedef struct
 {
     byte3 color;
@@ -26153,7 +26581,7 @@ typedef struct
     TPTR_START PackMapEnvDataGlobalV33 dataGlobal TPTR_END;
 } PackMapEnvironmentV33<optimize=false>;
 
-=> Version: 32, ReferencedFunction: 0xF28AF0
+=> Version: 32, ReferencedFunction: 0xFF5460
 typedef struct
 {
     byte3 color;
@@ -26359,7 +26787,7 @@ typedef struct
     TPTR_START PackMapEnvDataGlobalV32 dataGlobal TPTR_END;
 } PackMapEnvironmentV32<optimize=false>;
 
-=> Version: 31, ReferencedFunction: 0xF28A80
+=> Version: 31, ReferencedFunction: 0xFF53F0
 typedef struct
 {
     byte3 color;
@@ -26566,7 +26994,7 @@ typedef struct
     TPTR_START PackMapEnvDataGlobalV31 dataGlobal TPTR_END;
 } PackMapEnvironmentV31<optimize=false>;
 
-=> Version: 30, ReferencedFunction: 0xF28A00
+=> Version: 30, ReferencedFunction: 0xFF5370
 typedef struct
 {
     byte3 color;
@@ -26973,7 +27401,7 @@ typedef struct
 
 
 ==================================================
- Chunk: laye, versions: 1, strucTab: 0x1394F1C
+ Chunk: laye, versions: 1, strucTab: 0x156CFA4
 ==================================================
 => Version: 0
 typedef struct
@@ -26996,7 +27424,7 @@ typedef struct
 
 
 ==================================================
- Chunk: lght, versions: 18, strucTab: 0x13954B8
+ Chunk: lght, versions: 18, strucTab: 0x156E890
 ==================================================
 => Version: 17
 typedef struct
@@ -27223,7 +27651,7 @@ typedef struct
     word maxBroadId;
 } PackMapLights<optimize=false>;
 
-=> Version: 15, ReferencedFunction: 0xF2C8E0
+=> Version: 15, ReferencedFunction: 0xFF6F70
 typedef struct
 {
     float3 position;
@@ -27430,7 +27858,7 @@ typedef struct
     word maxBroadId;
 } PackMapLightsV14<optimize=false>;
 
-=> Version: 13, ReferencedFunction: 0xF2C780
+=> Version: 13, ReferencedFunction: 0xFF6E10
 typedef struct
 {
     float3 position;
@@ -27519,7 +27947,7 @@ typedef struct
     word maxBroadId;
 } PackMapLights<optimize=false>;
 
-=> Version: 12, ReferencedFunction: 0xF2C540
+=> Version: 12, ReferencedFunction: 0xFF6B80
 typedef struct
 {
     float3 position;
@@ -27608,7 +28036,7 @@ typedef struct
     word maxBroadId;
 } PackMapLights<optimize=false>;
 
-=> Version: 11, ReferencedFunction: 0xF2C540
+=> Version: 11, ReferencedFunction: 0xFF6B80
 typedef struct
 {
     float3 position;
@@ -27697,7 +28125,7 @@ typedef struct
     word maxBroadId;
 } PackMapLights<optimize=false>;
 
-=> Version: 10, ReferencedFunction: 0xF2D0D0
+=> Version: 10, ReferencedFunction: 0xFF7760
 typedef struct
 {
     float3 position;
@@ -27776,7 +28204,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START PackMapVolumeLight volumeLights TSTRUCT_ARRAY_PTR_END;
 } PackMapLights<optimize=false>;
 
-=> Version: 9, ReferencedFunction: 0xF2D010
+=> Version: 9, ReferencedFunction: 0xFF76A0
 typedef struct
 {
     float3 position;
@@ -27855,7 +28283,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START PackMapVolumeLight volumeLights TSTRUCT_ARRAY_PTR_END;
 } PackMapLights<optimize=false>;
 
-=> Version: 8, ReferencedFunction: 0xF2CF90
+=> Version: 8, ReferencedFunction: 0xFF7620
 typedef struct
 {
     float3 position;
@@ -28083,7 +28511,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START PackMapVolumeLight volumeLights TSTRUCT_ARRAY_PTR_END;
 } PackMapLights<optimize=false>;
 
-=> Version: 5, ReferencedFunction: 0xF2CE00
+=> Version: 5, ReferencedFunction: 0xFF7490
 typedef struct
 {
     float3 position;
@@ -28139,7 +28567,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START PackMapPointLightgroups spotLights TSTRUCT_ARRAY_PTR_END;
 } PackMapLights<optimize=false>;
 
-=> Version: 4, ReferencedFunction: 0xF2CC00
+=> Version: 4, ReferencedFunction: 0xFF7290
 typedef struct
 {
     float3 position;
@@ -28173,7 +28601,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START PackMapLightgroups lights TSTRUCT_ARRAY_PTR_END;
 } PackMapLights<optimize=false>;
 
-=> Version: 3, ReferencedFunction: 0xF2CAC0
+=> Version: 3, ReferencedFunction: 0xFF7150
 typedef struct
 {
     dword type;
@@ -28207,7 +28635,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START PackMapLightgroups lights TSTRUCT_ARRAY_PTR_END;
 } PackMapLights<optimize=false>;
 
-=> Version: 2, ReferencedFunction: 0xF2C9A0
+=> Version: 2, ReferencedFunction: 0xFF7030
 typedef struct
 {
     dword type;
@@ -28251,7 +28679,7 @@ typedef struct
 
 
 ==================================================
- Chunk: msn, versions: 3, strucTab: 0x1395820
+ Chunk: msn, versions: 3, strucTab: 0x156E9C8
 ==================================================
 => Version: 2
 typedef struct
@@ -28280,7 +28708,7 @@ typedef struct
 
 
 ==================================================
- Chunk: nvms, versions: 3, strucTab: 0x1392814
+ Chunk: nvms, versions: 3, strucTab: 0x156BE9C
 ==================================================
 => Version: 2
 typedef struct
@@ -28309,7 +28737,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START PackMapNavMeshMoverV2 dynamicArray TSTRUCT_ARRAY_PTR_END;
 } PackMapNavMeshV2<optimize=false>;
 
-=> Version: 1, ReferencedFunction: 0xF2DEF0
+=> Version: 1, ReferencedFunction: 0xFF83F0
 typedef struct
 {
     float3 boundsMin;
@@ -28347,7 +28775,7 @@ typedef struct
 
 
 ==================================================
- Chunk: nmex, versions: 3, strucTab: 0x1392C7C
+ Chunk: nmex, versions: 3, strucTab: 0x156C230
 ==================================================
 => Version: 2
 typedef struct
@@ -28408,7 +28836,7 @@ typedef struct
 
 
 ==================================================
- Chunk: obs, versions: 3, strucTab: 0x1395844
+ Chunk: obs, versions: 3, strucTab: 0x156E9EC
 ==================================================
 => Version: 2
 typedef struct
@@ -28457,7 +28885,7 @@ typedef struct
 
 
 ==================================================
- Chunk: occ, versions: 1, strucTab: 0x1395A58
+ Chunk: occ, versions: 1, strucTab: 0x156EA90
 ==================================================
 => Version: 0
 typedef struct
@@ -28475,7 +28903,7 @@ typedef struct
 
 
 ==================================================
- Chunk: octm, versions: 1, strucTab: 0x1395A64
+ Chunk: octm, versions: 1, strucTab: 0x156EABC
 ==================================================
 => Version: 0
 typedef struct
@@ -28488,7 +28916,7 @@ typedef struct
 
 
 ==================================================
- Chunk: parm, versions: 1, strucTab: 0x1395AB0
+ Chunk: parm, versions: 1, strucTab: 0x156EAC8
 ==================================================
 => Version: 0
 typedef struct
@@ -28500,7 +28928,7 @@ typedef struct
 
 
 ==================================================
- Chunk: phys, versions: 11, strucTab: 0x1396128
+ Chunk: phys, versions: 11, strucTab: 0x156EC50
 ==================================================
 => Version: 10
 typedef struct
@@ -28572,7 +29000,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START PackMapPhysicsBlockV10 blockArray TSTRUCT_ARRAY_PTR_END;
 } PackMapPhysicsV10<optimize=false>;
 
-=> Version: 9, ReferencedFunction: 0xF2C310
+=> Version: 9, ReferencedFunction: 0xFF7FC0
 typedef struct
 {
     TSTRUCT_ARRAY_PTR_START word indexArray TSTRUCT_ARRAY_PTR_END;
@@ -28940,7 +29368,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START PackMapPhysicsBlockV7 blockArray TSTRUCT_ARRAY_PTR_END;
 } PackMapPhysicsV7<optimize=false>;
 
-=> Version: 6, ReferencedFunction: 0xF2C2F0
+=> Version: 6, ReferencedFunction: 0xFF7FA0
 typedef struct
 {
     TSTRUCT_ARRAY_PTR_START word indexArray TSTRUCT_ARRAY_PTR_END;
@@ -29082,7 +29510,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START PackMapPhysicsModelObstacleV6 obsModelArray TSTRUCT_ARRAY_PTR_END;
 } PackMapPhysicsV6<optimize=false>;
 
-=> Version: 5, ReferencedFunction: 0xF2C2F0
+=> Version: 5, ReferencedFunction: 0xFF7FA0
 typedef struct
 {
     TSTRUCT_ARRAY_PTR_START word indexArray TSTRUCT_ARRAY_PTR_END;
@@ -29219,7 +29647,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START PackMapPhysicsModelObstacleV5 obsModelArray TSTRUCT_ARRAY_PTR_END;
 } PackMapPhysicsV5<optimize=false>;
 
-=> Version: 4, ReferencedFunction: 0xF2C2F0
+=> Version: 4, ReferencedFunction: 0xFF7FA0
 typedef struct
 {
     TSTRUCT_ARRAY_PTR_START word indexArray TSTRUCT_ARRAY_PTR_END;
@@ -29403,7 +29831,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START PackMapPhysicsModelZoneV1 zoneModelArray TSTRUCT_ARRAY_PTR_END;
 } PackMapPhysicsV3<optimize=false>;
 
-=> Version: 2, ReferencedFunction: 0xF2C2D0
+=> Version: 2, ReferencedFunction: 0xFF7F80
 typedef struct
 {
     float scale;
@@ -29442,7 +29870,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START PackMapPhysicsModelZoneV0 zoneModelArray TSTRUCT_ARRAY_PTR_END;
 } PackMapPhysicsV2<optimize=false>;
 
-=> Version: 1, ReferencedFunction: 0xF2C2B0
+=> Version: 1, ReferencedFunction: 0xFF7F60
 typedef struct
 {
     float scale;
@@ -29474,7 +29902,7 @@ typedef struct
 
 
 ==================================================
- Chunk: pnvm, versions: 3, strucTab: 0x1395F74
+ Chunk: pnvm, versions: 3, strucTab: 0x156EB9C
 ==================================================
 => Version: 2
 typedef struct
@@ -29493,7 +29921,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START PackMapPhysicsNavMeshChunkV2 chunkArray TSTRUCT_ARRAY_PTR_END;
 } PackMapPhysicsNavMeshV2<optimize=false>;
 
-=> Version: 1, ReferencedFunction: 0xF2DF90
+=> Version: 1, ReferencedFunction: 0xFF85C0
 typedef struct
 {
     float3 boundsMin;
@@ -29530,7 +29958,7 @@ typedef struct
 
 
 ==================================================
- Chunk: prp2, versions: 22, strucTab: 0x13965D8
+ Chunk: prp2, versions: 22, strucTab: 0x15696A0
 ==================================================
 => Version: 21
 typedef struct
@@ -30095,7 +30523,7 @@ typedef struct
     dword nextBroadId;
 } PackMapPropV18<optimize=false>;
 
-=> Version: 17, ReferencedFunction: 0xF2B950
+=> Version: 17, ReferencedFunction: 0xFF3CE0
 typedef struct
 {
     filename filename;
@@ -30475,7 +30903,7 @@ typedef struct
     dword nextBroadId;
 } PackMapPropV15<optimize=false>;
 
-=> Version: 14, ReferencedFunction: 0xF2B8E0
+=> Version: 14, ReferencedFunction: 0xFF3C70
 typedef struct
 {
     filename filename;
@@ -30658,7 +31086,7 @@ typedef struct
     dword nextBroadId;
 } PackMapPropV13<optimize=false>;
 
-=> Version: 12, ReferencedFunction: 0xF2A950
+=> Version: 12, ReferencedFunction: 0xFF2A70
 typedef struct
 {
     filename filename;
@@ -30746,7 +31174,7 @@ typedef struct
     dword nextBroadId;
 } PackMapPropV12<optimize=false>;
 
-=> Version: 11, ReferencedFunction: 0xF2A7A0
+=> Version: 11, ReferencedFunction: 0xFF2870
 typedef struct
 {
     filename filename;
@@ -30804,7 +31232,7 @@ typedef struct
     dword nextBroadId;
 } PackMapPropV11<optimize=false>;
 
-=> Version: 10, ReferencedFunction: 0xF2BE00
+=> Version: 10, ReferencedFunction: 0xFF4190
 typedef struct
 {
     filename filename;
@@ -30853,7 +31281,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START PackMapPropObjToolV10 propToolArray TSTRUCT_ARRAY_PTR_END;
 } PackMapPropV10<optimize=false>;
 
-=> Version: 9, ReferencedFunction: 0xF2BCB0
+=> Version: 9, ReferencedFunction: 0xFF4040
 typedef struct
 {
     filename filename;
@@ -30951,7 +31379,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START PackMapPropObjToolV8 propToolArray TSTRUCT_ARRAY_PTR_END;
 } PackMapPropV8<optimize=false>;
 
-=> Version: 7, ReferencedFunction: 0xF2BC60
+=> Version: 7, ReferencedFunction: 0xFF3FF0
 typedef struct
 {
     filename filename;
@@ -30998,7 +31426,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START PackMapPropObjToolV7 propToolArray TSTRUCT_ARRAY_PTR_END;
 } PackMapPropV7<optimize=false>;
 
-=> Version: 6, ReferencedFunction: 0xF2BAB0
+=> Version: 6, ReferencedFunction: 0xFF3E40
 typedef struct
 {
     filename filename;
@@ -31170,7 +31598,7 @@ typedef struct
 
 
 ==================================================
- Chunk: reso, versions: 2, strucTab: 0x1396ED0
+ Chunk: reso, versions: 2, strucTab: 0x156A178
 ==================================================
 => Version: 1
 typedef struct
@@ -31213,8 +31641,35 @@ typedef struct
 
 
 ==================================================
- Chunk: rive, versions: 5, strucTab: 0x13961AC
+ Chunk: rive, versions: 6, strucTab: 0x156A2A0
 ==================================================
+=> Version: 5, ReferencedFunction: 0xFF8490
+typedef struct
+{
+    dword type;
+    qword val;
+    filename strVal;
+} PackMapRiverProperty<optimize=false>;
+
+typedef struct
+{
+    TSTRUCT_ARRAY_PTR_START PackMapRiverProperty properties TSTRUCT_ARRAY_PTR_END;
+} MapRiverReach<optimize=false>;
+
+typedef struct
+{
+    qword guid;
+    wchar_ptr name;
+    TSTRUCT_ARRAY_PTR_START PackMapRiverProperty properties TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START float3 points TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START MapRiverReach reaches TSTRUCT_ARRAY_PTR_END;
+} MapRiver<optimize=false>;
+
+typedef struct
+{
+    TSTRUCT_ARRAY_PTR_START MapRiver rivers TSTRUCT_ARRAY_PTR_END;
+} PackMapRivers<optimize=false>;
+
 => Version: 4
 typedef struct
 {
@@ -31485,54 +31940,24 @@ typedef struct
 
 
 ==================================================
- Chunk: tlfs, versions: 1, strucTab: 0x1395F68
+ Chunk: tlfs, versions: 1, strucTab: 0x156EB70
 ==================================================
-
-==================================================
- Chunk: shad, versions: 2, strucTab: 0x1397248
-==================================================
-=> Version: 1, ReferencedFunction: 0xF2DFB0
-typedef struct
-{
-    dword compressionMode;
-    TSTRUCT_ARRAY_PTR_START byte bytes TSTRUCT_ARRAY_PTR_END;
-} PackMapShadowTileV1<optimize=false>;
-
-typedef struct
-{
-    dword2 shadowDims;
-    dword2 tileDims;
-    TSTRUCT_ARRAY_PTR_START PackMapShadowTileV1 tiles TSTRUCT_ARRAY_PTR_END;
-    float worldToShadow[16];
-    float2 s;
-    float2 t;
-    float2 u;
-    float3 shadowEye;
-    float3 shadowDir;
-    float3 shadowUp;
-} PackMapShadowV1<optimize=false>;
-
 => Version: 0
 typedef struct
 {
-    dword compressionMode;
-    TSTRUCT_ARRAY_PTR_START byte bytes TSTRUCT_ARRAY_PTR_END;
-} PackMapShadowTileV0<optimize=false>;
+    fileref filename;
+    qword time;
+    TSTRUCT_ARRAY_PTR_START byte dataPtr TSTRUCT_ARRAY_PTR_END;
+} PackMapToolFsFileV0<optimize=false>;
 
 typedef struct
 {
-    dword2 shadowDims;
-    dword2 tileDims;
-    TSTRUCT_ARRAY_PTR_START PackMapShadowTileV0 tiles TSTRUCT_ARRAY_PTR_END;
-    float worldToShadow[16];
-    float2 s;
-    float2 t;
-    float2 u;
-} PackMapShadowV0<optimize=false>;
+    TSTRUCT_ARRAY_PTR_START PackMapToolFsFileV0 filePtr TSTRUCT_ARRAY_PTR_END;
+} PackMapToolFsV0<optimize=false>;
 
 
 ==================================================
- Chunk: shex, versions: 2, strucTab: 0x1397290
+ Chunk: shex, versions: 2, strucTab: 0x156A350
 ==================================================
 => Version: 1
 typedef struct
@@ -31543,9 +31968,9 @@ typedef struct
 
 
 ==================================================
- Chunk: shor, versions: 4, strucTab: 0x1397358
+ Chunk: shor, versions: 4, strucTab: 0x156A458
 ==================================================
-=> Version: 3, ReferencedFunction: 0xF2DFD0
+=> Version: 3, ReferencedFunction: 0xFF8600
 typedef struct
 {
     float offset;
@@ -31590,7 +32015,7 @@ typedef struct
 
 
 ==================================================
- Chunk: snd, versions: 1, strucTab: 0x1391EC4
+ Chunk: snd, versions: 1, strucTab: 0x156A5EC
 ==================================================
 => Version: 0
 typedef struct
@@ -31601,7 +32026,7 @@ typedef struct
 
 
 ==================================================
- Chunk: surf, versions: 3, strucTab: 0x1397418
+ Chunk: surf, versions: 3, strucTab: 0x156A5C8
 ==================================================
 => Version: 2
 typedef struct
@@ -31688,7 +32113,7 @@ typedef struct
 
 
 ==================================================
- Chunk: zon2, versions: 22, strucTab: 0x13922D8
+ Chunk: zon2, versions: 22, strucTab: 0x156B758
 ==================================================
 => Version: 21
 typedef struct
@@ -31792,7 +32217,7 @@ typedef struct
     wchar_ptr string;
 } PackMapZonesV22<optimize=false>;
 
-=> Version: 20, ReferencedFunction: 0xF2D4D0
+=> Version: 20, ReferencedFunction: 0xFF4CD0
 typedef struct
 {
     filename filename;
@@ -31889,7 +32314,7 @@ typedef struct
     word maxBroadId;
 } PackMapZonesV21<optimize=false>;
 
-=> Version: 19, ReferencedFunction: 0x5DBD20
+=> Version: 19, ReferencedFunction: 0x451BC0
 typedef struct
 {
     filename filename;
@@ -31986,7 +32411,7 @@ typedef struct
     word maxBroadId;
 } PackMapZonesV20<optimize=false>;
 
-=> Version: 18, ReferencedFunction: 0xF2D440
+=> Version: 18, ReferencedFunction: 0xFF4C40
 typedef struct
 {
     filename filename;
@@ -32082,7 +32507,7 @@ typedef struct
     word maxBroadId;
 } PackMapZonesV19<optimize=false>;
 
-=> Version: 17, ReferencedFunction: 0xF2D380
+=> Version: 17, ReferencedFunction: 0xFF4B80
 typedef struct
 {
     filename filename;
@@ -32178,7 +32603,7 @@ typedef struct
     word maxBroadId;
 } PackMapZonesV18<optimize=false>;
 
-=> Version: 16, ReferencedFunction: 0xF2D1A0
+=> Version: 16, ReferencedFunction: 0xFF4940
 typedef struct
 {
     filename filename;
@@ -32271,7 +32696,7 @@ typedef struct
     word maxBroadId;
 } PackMapZonesV17<optimize=false>;
 
-=> Version: 15, ReferencedFunction: 0xF2D1A0
+=> Version: 15, ReferencedFunction: 0xFF4940
 typedef struct
 {
     filename filename;
@@ -32672,7 +33097,7 @@ typedef struct
 
 
 ==================================================
- Chunk: trn, versions: 15, strucTab: 0x1391DE0
+ Chunk: trn, versions: 15, strucTab: 0x156AC38
 ==================================================
 => Version: 14
 typedef struct
@@ -32743,7 +33168,7 @@ typedef struct
     TPTR_START PackMapTerrainMaterialsV14 materials TPTR_END;
 } PackMapTerrainV14<optimize=false>;
 
-=> Version: 13, ReferencedFunction: 0xF2DA40
+=> Version: 13, ReferencedFunction: 0xFF7DA0
 typedef struct
 {
     dword chunkFlags;
@@ -32812,7 +33237,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START qword typeArray TSTRUCT_ARRAY_PTR_END;
 } PackMapTerrainV13<optimize=false>;
 
-=> Version: 12, ReferencedFunction: 0xF2D930
+=> Version: 12, ReferencedFunction: 0xFF7C90
 typedef struct
 {
     dword chunkFlags;
@@ -32878,7 +33303,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START qword typeArray TSTRUCT_ARRAY_PTR_END;
 } PackMapTerrainV12<optimize=false>;
 
-=> Version: 11, ReferencedFunction: 0xF2D8A0
+=> Version: 11, ReferencedFunction: 0xFF7C00
 typedef struct
 {
     dword chunkFlags;
@@ -33012,9 +33437,9 @@ typedef struct
 
 
 ==================================================
- Chunk: trni, versions: 4, strucTab: 0x1391E94
+ Chunk: trni, versions: 4, strucTab: 0x156AD38
 ==================================================
-=> Version: 3, ReferencedFunction: 0xF2DAA0
+=> Version: 3, ReferencedFunction: 0xFF7E00
 typedef struct
 {
     dword2 rawDims;
@@ -33194,7 +33619,7 @@ typedef struct
 
 
 ==================================================
- Chunk: watr, versions: 1, strucTab: 0x1391F60
+ Chunk: watr, versions: 1, strucTab: 0x156ACEC
 ==================================================
 => Version: 0
 typedef struct
@@ -33205,9 +33630,9 @@ typedef struct
 
 
 ==================================================
- Chunk: edit, versions: 15, strucTab: 0x1393928
+ Chunk: edit, versions: 15, strucTab: 0x156CE10
 ==================================================
-=> Version: 14, ReferencedFunction: 0x5DBD20
+=> Version: 14, ReferencedFunction: 0x451BC0
 typedef struct
 {
     qword guid;
@@ -33307,7 +33732,7 @@ typedef struct
     wchar_ptr reserved;
 } MapEditData<optimize=false>;
 
-=> Version: 13, ReferencedFunction: 0x5DBD20
+=> Version: 13, ReferencedFunction: 0x451BC0
 typedef struct
 {
     qword guid;
@@ -33379,7 +33804,7 @@ typedef struct
     wchar_ptr reserved;
 } MapEditData<optimize=false>;
 
-=> Version: 12, ReferencedFunction: 0x5DBD20
+=> Version: 12, ReferencedFunction: 0x451BC0
 typedef struct
 {
     qword guid;
@@ -33788,7 +34213,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START PackMapEditDirtyChunks floodPoints TSTRUCT_ARRAY_PTR_END;
 } MapEditData<optimize=false>;
 
-=> Version: 5, ReferencedFunction: 0x5DBD20
+=> Version: 5, ReferencedFunction: 0x451BC0
 typedef struct
 {
     TSTRUCT_ARRAY_PTR_START wchar_ptr regions TSTRUCT_ARRAY_PTR_END;
@@ -33844,7 +34269,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START MapEditCamLocations camLocations TSTRUCT_ARRAY_PTR_END;
 } MapEditData<optimize=false>;
 
-=> Version: 4, ReferencedFunction: 0x5DBD20
+=> Version: 4, ReferencedFunction: 0x451BC0
 typedef struct
 {
     TSTRUCT_ARRAY_PTR_START wchar_ptr regions TSTRUCT_ARRAY_PTR_END;
@@ -33943,9 +34368,9 @@ typedef struct
 
 
 ==================================================
- Chunk: dcal, versions: 10, strucTab: 0x1393650
+ Chunk: dcal, versions: 10, strucTab: 0x156CB38
 ==================================================
-=> Version: 9, ReferencedFunction: 0xF2DC70
+=> Version: 9, ReferencedFunction: 0xFF8170
 typedef struct
 {
     float3 position;
@@ -34026,7 +34451,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START PackMapDecalV8 decals TSTRUCT_ARRAY_PTR_END;
 } PackMapDecalsV8<optimize=false>;
 
-=> Version: 7, ReferencedFunction: 0xF2DC10
+=> Version: 7, ReferencedFunction: 0xFF8110
 typedef struct
 {
     float3 position;
@@ -34165,7 +34590,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START PackMapDecalV4 decals TSTRUCT_ARRAY_PTR_END;
 } PackMapDecalsV4<optimize=false>;
 
-=> Version: 3, ReferencedFunction: 0xF2DB90
+=> Version: 3, ReferencedFunction: 0xFF8090
 typedef struct
 {
     float3 position;
@@ -34234,7 +34659,7 @@ typedef struct
 
 
 ==================================================
- Chunk: exp, versions: 1, strucTab: 0x1394F10
+ Chunk: exp, versions: 1, strucTab: 0x156C6EC
 ==================================================
 => Version: 0
 typedef struct
@@ -34251,27 +34676,7 @@ typedef struct
 
 
 ==================================================
- Chunk: pack, versions: 1, strucTab: 0x1395ABC
-==================================================
-=> Version: 0
-typedef struct
-{
-    wchar_ptr file;
-    wchar_ptr name;
-    qword token;
-    dword flags;
-} MapVariant<optimize=false>;
-
-typedef struct
-{
-    filename baseFile;
-    TSTRUCT_ARRAY_PTR_START MapVariant variants TSTRUCT_ARRAY_PTR_END;
-    dword flags;
-} MapPackage<optimize=false>;
-
-
-==================================================
- Chunk: nvms, versions: 3, strucTab: 0x1393000
+ Chunk: nvms, versions: 3, strucTab: 0x156C254
 ==================================================
 => Version: 2
 typedef struct
@@ -34283,7 +34688,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START byte queryMediatorMoppData TSTRUCT_ARRAY_PTR_END;
 } PackMapNavMeshChunkV2<optimize=false>;
 
-=> Version: 1, ReferencedFunction: 0xF2DE90
+=> Version: 1, ReferencedFunction: 0xFF8390
 typedef struct
 {
     float3 boundsMin;
@@ -34305,9 +34710,9 @@ typedef struct
 
 
 ==================================================
- Chunk: MODL, versions: 66, strucTab: 0x13E5628
+ Chunk: MODL, versions: 66, strucTab: 0x15BDB28
 ==================================================
-=> Version: 65, ReferencedFunction: 0xF95020
+=> Version: 65, ReferencedFunction: 0x1067F50
 typedef struct
 {
     filename filename;
@@ -35154,7 +35559,7 @@ typedef struct
     TPTR_START ModelBoundingSphereV64 boundingSphere TPTR_END;
 } ModelFileDataV64<optimize=false>;
 
-=> Version: 63, ReferencedFunction: 0xF94F60
+=> Version: 63, ReferencedFunction: 0x1067E90
 typedef struct
 {
     filename filename;
@@ -35595,7 +36000,7 @@ typedef struct
     TPTR_START ModelBoundingSphereV63 boundingSphere TPTR_END;
 } ModelFileDataV63<optimize=false>;
 
-=> Version: 62, ReferencedFunction: 0xF94E40
+=> Version: 62, ReferencedFunction: 0x1067D70
 typedef struct
 {
     filename filename;
@@ -36036,7 +36441,7 @@ typedef struct
     TPTR_START ModelBoundingSphereV62 boundingSphere TPTR_END;
 } ModelFileDataV62<optimize=false>;
 
-=> Version: 61, ReferencedFunction: 0xF94DE0
+=> Version: 61, ReferencedFunction: 0x1067D10
 typedef struct
 {
     filename filename;
@@ -36591,7 +36996,7 @@ typedef struct
     filename modelReference;
 } ModelFileDataV61<optimize=false>;
 
-=> Version: 60, ReferencedFunction: 0xF94A10
+=> Version: 60, ReferencedFunction: 0x1067910
 typedef struct
 {
     filename filename;
@@ -37130,7 +37535,7 @@ typedef struct
     filename modelReference;
 } ModelFileDataV60<optimize=false>;
 
-=> Version: 59, ReferencedFunction: 0xF949C0
+=> Version: 59, ReferencedFunction: 0x10678C0
 typedef struct
 {
     filename filename;
@@ -37660,7 +38065,7 @@ typedef struct
     filename modelReference;
 } ModelFileDataV59<optimize=false>;
 
-=> Version: 58, ReferencedFunction: 0xF948D0
+=> Version: 58, ReferencedFunction: 0x10677D0
 typedef struct
 {
     filename filename;
@@ -39227,7 +39632,7 @@ typedef struct
     filename modelReference;
 } ModelFileDataV56<optimize=false>;
 
-=> Version: 55, ReferencedFunction: 0xF94800
+=> Version: 55, ReferencedFunction: 0x10676F0
 typedef struct
 {
     filename filename;
@@ -40254,7 +40659,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START ModelBoneOffsetDataV54 boneOffsetData TSTRUCT_ARRAY_PTR_END;
 } ModelFileDataV54<optimize=false>;
 
-=> Version: 53, ReferencedFunction: 0xF94520
+=> Version: 53, ReferencedFunction: 0x10673F0
 typedef struct
 {
     filename filename;
@@ -40757,7 +41162,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START ModelBoneOffsetDataV53 boneOffsetData TSTRUCT_ARRAY_PTR_END;
 } ModelFileDataV53<optimize=false>;
 
-=> Version: 52, ReferencedFunction: 0xF943D0
+=> Version: 52, ReferencedFunction: 0x10672A0
 typedef struct
 {
     filename filename;
@@ -41258,7 +41663,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START ModelBoneOffsetDataV52 boneOffsetData TSTRUCT_ARRAY_PTR_END;
 } ModelFileDataV52<optimize=false>;
 
-=> Version: 51, ReferencedFunction: 0xF94160
+=> Version: 51, ReferencedFunction: 0x1067020
 typedef struct
 {
     filename filename;
@@ -41749,7 +42154,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START ModelBoneOffsetDataV51 boneOffsetData TSTRUCT_ARRAY_PTR_END;
 } ModelFileDataV51<optimize=false>;
 
-=> Version: 50, ReferencedFunction: 0xF94120
+=> Version: 50, ReferencedFunction: 0x1066FE0
 typedef struct
 {
     filename filename;
@@ -42704,7 +43109,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START ModelBoneOffsetDataV49 boneOffsetData TSTRUCT_ARRAY_PTR_END;
 } ModelFileDataV49<optimize=false>;
 
-=> Version: 48, ReferencedFunction: 0xF93990
+=> Version: 48, ReferencedFunction: 0x10667E0
 typedef struct
 {
     filename filename;
@@ -43174,7 +43579,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START ModelSoftBodyDataV48 softBodyData TSTRUCT_ARRAY_PTR_END;
 } ModelFileDataV48<optimize=false>;
 
-=> Version: 47, ReferencedFunction: 0xF93720
+=> Version: 47, ReferencedFunction: 0x1066560
 typedef struct
 {
     filename filename;
@@ -43636,7 +44041,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START ModelSoftBodyDataV47 softBodyData TSTRUCT_ARRAY_PTR_END;
 } ModelFileDataV47<optimize=false>;
 
-=> Version: 46, ReferencedFunction: 0xF93690
+=> Version: 46, ReferencedFunction: 0x10664D0
 typedef struct
 {
     filename filename;
@@ -44552,7 +44957,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START ModelSoftBodyDataV45 softBodyData TSTRUCT_ARRAY_PTR_END;
 } ModelFileDataV45<optimize=false>;
 
-=> Version: 44, ReferencedFunction: 0xF934D0
+=> Version: 44, ReferencedFunction: 0x1066310
 typedef struct
 {
     filename filename;
@@ -46327,7 +46732,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START ModelSoftBodyDataV41 softBodyData TSTRUCT_ARRAY_PTR_END;
 } ModelFileDataV41<optimize=false>;
 
-=> Version: 40, ReferencedFunction: 0xF93480
+=> Version: 40, ReferencedFunction: 0x10662C0
 typedef struct
 {
     filename filename;
@@ -46757,7 +47162,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START ModelBoneConstraintV40 boneConstraints TSTRUCT_ARRAY_PTR_END;
 } ModelFileDataV40<optimize=false>;
 
-=> Version: 39, ReferencedFunction: 0xF933D0
+=> Version: 39, ReferencedFunction: 0x1066210
 typedef struct
 {
     filename filename;
@@ -47184,7 +47589,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START ModelBoneConstraintV39 boneConstraints TSTRUCT_ARRAY_PTR_END;
 } ModelFileDataV39<optimize=false>;
 
-=> Version: 38, ReferencedFunction: 0xF93250
+=> Version: 38, ReferencedFunction: 0x1066090
 typedef struct
 {
     filename filename;
@@ -48036,7 +48441,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START ModelBoneConstraintV37 boneConstraints TSTRUCT_ARRAY_PTR_END;
 } ModelFileDataV37<optimize=false>;
 
-=> Version: 36, ReferencedFunction: 0xF93110
+=> Version: 36, ReferencedFunction: 0x1065F50
 typedef struct
 {
     filename filename;
@@ -48463,7 +48868,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START ModelBoneConstraintV36 boneConstraints TSTRUCT_ARRAY_PTR_END;
 } ModelFileDataV36<optimize=false>;
 
-=> Version: 35, ReferencedFunction: 0xF92FB0
+=> Version: 35, ReferencedFunction: 0x1065DF0
 typedef struct
 {
     filename filename;
@@ -48881,7 +49286,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START ModelBoneConstraintV35 boneConstraints TSTRUCT_ARRAY_PTR_END;
 } ModelFileDataV35<optimize=false>;
 
-=> Version: 34, ReferencedFunction: 0xF92EB0
+=> Version: 34, ReferencedFunction: 0x1065CF0
 typedef struct
 {
     filename filename;
@@ -50791,7 +51196,7 @@ typedef struct
     filename soundScript;
 } ModelFileDataV30<optimize=false>;
 
-=> Version: 29, ReferencedFunction: 0xF92E00
+=> Version: 29, ReferencedFunction: 0x1065C40
 typedef struct
 {
     filename filename;
@@ -51763,7 +52168,7 @@ typedef struct
     filename soundScript;
 } ModelFileDataV27<optimize=false>;
 
-=> Version: 26, ReferencedFunction: 0xF92A70
+=> Version: 26, ReferencedFunction: 0x1065890
 typedef struct
 {
     filename filename;
@@ -52076,7 +52481,7 @@ typedef struct
     filename soundScript;
 } ModelFileDataV26<optimize=false>;
 
-=> Version: 25, ReferencedFunction: 0xF928D0
+=> Version: 25, ReferencedFunction: 0x10656F0
 typedef struct
 {
     filename filename;
@@ -52392,7 +52797,7 @@ typedef struct
     filename soundScript;
 } ModelFileDataV25<optimize=false>;
 
-=> Version: 24, ReferencedFunction: 0xF92870
+=> Version: 24, ReferencedFunction: 0x1065690
 typedef struct
 {
     filename filename;
@@ -52707,7 +53112,7 @@ typedef struct
     filename soundScript;
 } ModelFileDataV24<optimize=false>;
 
-=> Version: 23, ReferencedFunction: 0xF92800
+=> Version: 23, ReferencedFunction: 0x1065620
 typedef struct
 {
     filename filename;
@@ -53335,7 +53740,7 @@ typedef struct
     filename soundScript;
 } ModelFileDataV22<optimize=false>;
 
-=> Version: 21, ReferencedFunction: 0xF92740
+=> Version: 21, ReferencedFunction: 0x1065560
 typedef struct
 {
     filename filename;
@@ -53649,7 +54054,7 @@ typedef struct
     filename soundScript;
 } ModelFileDataV21<optimize=false>;
 
-=> Version: 20, ReferencedFunction: 0xF925A0
+=> Version: 20, ReferencedFunction: 0x10653B0
 typedef struct
 {
     filename filename;
@@ -55873,7 +56278,7 @@ typedef struct
     TPTR_START ModelStreakDataV12 streakData TPTR_END;
 } ModelFileDataV12<optimize=false>;
 
-=> Version: 11, ReferencedFunction: 0xF92360
+=> Version: 11, ReferencedFunction: 0x1065170
 typedef struct
 {
     filename filename;
@@ -56451,7 +56856,7 @@ typedef struct
     TPTR_START ModelCloudDataV9 cloudData TPTR_END;
 } ModelFileDataV9<optimize=false>;
 
-=> Version: 8, ReferencedFunction: 0xF952C0
+=> Version: 8, ReferencedFunction: 0x1068210
 typedef struct
 {
     filename filename;
@@ -56660,7 +57065,7 @@ typedef struct
 typedef struct
 {
     TSTRUCT_ARRAY_PTR_START byte animation TSTRUCT_ARRAY_PTR_END;
-} PackGrannyAnimationType<optimize=false>;
+} PackGrannyAnimationTypeV0<optimize=false>;
 
 typedef struct
 {
@@ -56671,7 +57076,7 @@ typedef struct
 typedef struct
 {
     qword token;
-    PackGrannyAnimationType animation;
+    PackGrannyAnimationTypeV0 animation;
     float moveSpeed;
     TSTRUCT_ARRAY_PTR_START ModelVisTrackDataV7 visTrackData TSTRUCT_ARRAY_PTR_END;
 } ModelAnimationDataV7<optimize=false>;
@@ -56858,7 +57263,7 @@ typedef struct
     TPTR_START ModelCloudDataV7 cloudData TPTR_END;
 } ModelFileDataV7<optimize=false>;
 
-=> Version: 6, ReferencedFunction: 0xF94A50
+=> Version: 6, ReferencedFunction: 0x1067950
 typedef struct
 {
     filename filename;
@@ -56898,7 +57303,7 @@ typedef struct
 typedef struct
 {
     TSTRUCT_ARRAY_PTR_START byte animation TSTRUCT_ARRAY_PTR_END;
-} PackGrannyAnimationType<optimize=false>;
+} PackGrannyAnimationTypeV0<optimize=false>;
 
 typedef struct
 {
@@ -56909,7 +57314,7 @@ typedef struct
 typedef struct
 {
     qword token;
-    PackGrannyAnimationType animation;
+    PackGrannyAnimationTypeV0 animation;
     float moveSpeed;
     TSTRUCT_ARRAY_PTR_START ModelVisTrackDataV6 visTrackData TSTRUCT_ARRAY_PTR_END;
 } ModelAnimationDataV6<optimize=false>;
@@ -57135,7 +57540,7 @@ typedef struct
 typedef struct
 {
     TSTRUCT_ARRAY_PTR_START byte animation TSTRUCT_ARRAY_PTR_END;
-} PackGrannyAnimationType<optimize=false>;
+} PackGrannyAnimationTypeV0<optimize=false>;
 
 typedef struct
 {
@@ -57146,7 +57551,7 @@ typedef struct
 typedef struct
 {
     qword token;
-    PackGrannyAnimationType animation;
+    PackGrannyAnimationTypeV0 animation;
     float moveSpeed;
     TSTRUCT_ARRAY_PTR_START ModelVisTrackDataV5 visTrackData TSTRUCT_ARRAY_PTR_END;
 } ModelAnimationDataV5<optimize=false>;
@@ -57361,7 +57766,7 @@ typedef struct
 typedef struct
 {
     TSTRUCT_ARRAY_PTR_START byte animation TSTRUCT_ARRAY_PTR_END;
-} PackGrannyAnimationType<optimize=false>;
+} PackGrannyAnimationTypeV0<optimize=false>;
 
 typedef struct
 {
@@ -57372,7 +57777,7 @@ typedef struct
 typedef struct
 {
     qword token;
-    PackGrannyAnimationType animation;
+    PackGrannyAnimationTypeV0 animation;
     float moveSpeed;
     TSTRUCT_ARRAY_PTR_START ModelVisTrackDataV4 visTrackData TSTRUCT_ARRAY_PTR_END;
 } ModelAnimationDataV4<optimize=false>;
@@ -57585,12 +57990,12 @@ typedef struct
 typedef struct
 {
     TSTRUCT_ARRAY_PTR_START byte animation TSTRUCT_ARRAY_PTR_END;
-} PackGrannyAnimationType<optimize=false>;
+} PackGrannyAnimationTypeV0<optimize=false>;
 
 typedef struct
 {
     qword token;
-    PackGrannyAnimationType animation;
+    PackGrannyAnimationTypeV0 animation;
 } ModelAnimationDataV3<optimize=false>;
 
 typedef struct
@@ -57801,12 +58206,12 @@ typedef struct
 typedef struct
 {
     TSTRUCT_ARRAY_PTR_START byte animation TSTRUCT_ARRAY_PTR_END;
-} PackGrannyAnimationType<optimize=false>;
+} PackGrannyAnimationTypeV0<optimize=false>;
 
 typedef struct
 {
     qword token;
-    PackGrannyAnimationType animation;
+    PackGrannyAnimationTypeV0 animation;
 } ModelAnimationDataV2<optimize=false>;
 
 typedef struct
@@ -58002,12 +58407,12 @@ typedef struct
 typedef struct
 {
     TSTRUCT_ARRAY_PTR_START byte animation TSTRUCT_ARRAY_PTR_END;
-} PackGrannyAnimationType<optimize=false>;
+} PackGrannyAnimationTypeV0<optimize=false>;
 
 typedef struct
 {
     qword token;
-    PackGrannyAnimationType animation;
+    PackGrannyAnimationTypeV0 animation;
 } ModelAnimationDataV1<optimize=false>;
 
 typedef struct
@@ -58136,12 +58541,12 @@ typedef struct
 typedef struct
 {
     TSTRUCT_ARRAY_PTR_START byte animation TSTRUCT_ARRAY_PTR_END;
-} PackGrannyAnimationType<optimize=false>;
+} PackGrannyAnimationTypeV0<optimize=false>;
 
 typedef struct
 {
     qword token;
-    PackGrannyAnimationType animation;
+    PackGrannyAnimationTypeV0 animation;
 } ModelAnimationDataV0<optimize=false>;
 
 typedef struct
@@ -58206,17 +58611,179 @@ typedef struct
 
 
 ==================================================
- Chunk: ANIM, versions: 25, strucTab: 0x13E5980
+ Chunk: ANIM, versions: 26, strucTab: 0x15BDE40
 ==================================================
-=> Version: 24, ReferencedFunction: 0xF90460
+=> Version: 25, ReferencedFunction: 0x1063090
 typedef struct
 {
     TSTRUCT_ARRAY_PTR_START byte animation TSTRUCT_ARRAY_PTR_END;
-} PackGrannyAnimationType<optimize=false>;
+    TSTRUCT_ARRAY_PTR_START dword pointers TSTRUCT_ARRAY_PTR_END;
+} PackGrannyAnimationTypeV1<optimize=false>;
 
 typedef struct
 {
-    PackGrannyAnimationType data;
+    PackGrannyAnimationTypeV1 data;
+    filename fileFull;
+} ModelAnimationLodV25<optimize=false>;
+
+typedef struct
+{
+    qword boneToken;
+    TSTRUCT_ARRAY_PTR_START float keys TSTRUCT_ARRAY_PTR_END;
+} ModelVisTrackDataV33<optimize=false>;
+
+typedef struct
+{
+    byte type;
+    dword trackGroupIndex;
+    dword vectorTrackIndex;
+    float4 initialValue;
+} ModelTrackTypeDataV25<optimize=false>;
+
+typedef struct
+{
+    dword uvAnimId;
+    TSTRUCT_ARRAY_PTR_START ModelTrackTypeDataV25 uvTransformData TSTRUCT_ARRAY_PTR_END;
+} ModelUVAnimationV25<optimize=false>;
+
+typedef struct
+{
+    qword bone;
+    TSTRUCT_ARRAY_PTR_START ModelTrackTypeDataV25 cloudTrackData TSTRUCT_ARRAY_PTR_END;
+} ModelCloudAnimV25<optimize=false>;
+
+typedef struct
+{
+    dword materialId;
+    dword constToken;
+    dword trackGroupIndex;
+    dword vectorTrackIndex;
+    float4 initialValue;
+} ModelMatConstAnimV25<optimize=false>;
+
+typedef struct
+{
+    qword bone;
+    TSTRUCT_ARRAY_PTR_START ModelTrackTypeDataV25 lightTrackData TSTRUCT_ARRAY_PTR_END;
+} ModelLightAnimationV25<optimize=false>;
+
+typedef struct
+{
+    qword id;
+    dword type;
+    float time;
+    qword val;
+    filename strVal;
+} ModelAnimPropertyDataV25<optimize=false>;
+
+typedef struct
+{
+    qword linkToken;
+    dword trackGroupIndex;
+    dword vectorTrackIndex;
+    float4 initialValue;
+} ModelTokenMapAnimV25<optimize=false>;
+
+typedef struct
+{
+    qword bone;
+    TSTRUCT_ARRAY_PTR_START ModelTrackTypeDataV25 bcTrackData TSTRUCT_ARRAY_PTR_END;
+} ModelBoneConstraintAnimV25<optimize=false>;
+
+typedef struct
+{
+    qword bone;
+    TSTRUCT_ARRAY_PTR_START ModelTrackTypeDataV25 anchorTrackData TSTRUCT_ARRAY_PTR_END;
+} ModelAnchorAnimV25<optimize=false>;
+
+typedef struct
+{
+    qword bone;
+    TSTRUCT_ARRAY_PTR_START ModelAnchorAnimV25 anchorAnim TSTRUCT_ARRAY_PTR_END;
+} ModelStreakAnimV25<optimize=false>;
+
+typedef struct
+{
+    qword bone;
+    TSTRUCT_ARRAY_PTR_START ModelTrackTypeDataV25 lightningTrackData TSTRUCT_ARRAY_PTR_END;
+} ModelLightningAnimV25<optimize=false>;
+
+typedef struct
+{
+    qword bone;
+    TSTRUCT_ARRAY_PTR_START ModelTrackTypeDataV25 windTrackData TSTRUCT_ARRAY_PTR_END;
+} ModelWindAnimationV25<optimize=false>;
+
+typedef struct
+{
+    qword token;
+    PackGrannyAnimationTypeV1 data;
+    TPTR_START ModelAnimationLodV25 animLod TPTR_END;
+    float moveSpeed;
+    TSTRUCT_ARRAY_PTR_START ModelVisTrackDataV33 visTrackData TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelUVAnimationV25 uvAnimData TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelCloudAnimV25 cloudAnim TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelMatConstAnimV25 matConstAnim TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START word morphTrackGroups TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START float triggerTimes TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START qword triggerTokens TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelLightAnimationV25 lightAnimData TSTRUCT_ARRAY_PTR_END;
+    dword isAdditive;
+    dword variantCount;
+    dword variantIndices[3];
+    TSTRUCT_ARRAY_PTR_START ModelAnimPropertyDataV25 properties TSTRUCT_ARRAY_PTR_END;
+    float3 center;
+    float radius;
+    TSTRUCT_ARRAY_PTR_START ModelTokenMapAnimV25 tokenMapAnims TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelBoneConstraintAnimV25 bcAnim TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelStreakAnimV25 streakAnim TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelLightningAnimV25 lightningAnim TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelWindAnimationV25 windAnimData TSTRUCT_ARRAY_PTR_END;
+} ModelAnimationDataV33<optimize=false>;
+
+typedef struct
+{
+    qword token;
+    qword start;
+    qword loop;
+    qword end;
+} ModelCompoundAnimationDataV25<optimize=false>;
+
+typedef struct
+{
+    qword name;
+    float duration;
+} ModelAnimationImportSequenceV25<optimize=false>;
+
+typedef struct
+{
+    filename filename;
+    TSTRUCT_ARRAY_PTR_START ModelAnimationImportSequenceV25 sequences TSTRUCT_ARRAY_PTR_END;
+} ModelAnimationImportDataV33<optimize=false>;
+
+typedef struct
+{
+    TSTRUCT_PTR_ARRAY_PTR_START ModelAnimationDataV33 animations TSTRUCT_PTR_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelCompoundAnimationDataV25 compoundAnimations TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START qword fallbacks TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelAnimationImportDataV33 imports TSTRUCT_ARRAY_PTR_END;
+} ModelFileAnimationBankV25<optimize=false>;
+
+typedef struct
+{
+    TPTR_START ModelFileAnimationBankV25 bank TPTR_END;
+    PackGrannyAnimationTypeV1 anim;
+} ModelFileAnimationV25<optimize=false>;
+
+=> Version: 24, ReferencedFunction: 0x1062EA0
+typedef struct
+{
+    TSTRUCT_ARRAY_PTR_START byte animation TSTRUCT_ARRAY_PTR_END;
+} PackGrannyAnimationTypeV0<optimize=false>;
+
+typedef struct
+{
+    PackGrannyAnimationTypeV0 data;
     filename fileFull;
 } ModelAnimationLodV24<optimize=false>;
 
@@ -58311,7 +58878,7 @@ typedef struct
 typedef struct
 {
     qword token;
-    PackGrannyAnimationType data;
+    PackGrannyAnimationTypeV0 data;
     TPTR_START ModelAnimationLodV24 animLod TPTR_END;
     float moveSpeed;
     TSTRUCT_ARRAY_PTR_START ModelVisTrackDataV32 visTrackData TSTRUCT_ARRAY_PTR_END;
@@ -58366,14 +58933,14 @@ typedef struct
 typedef struct
 {
     TPTR_START ModelFileAnimationBankV24 bank TPTR_END;
-    PackGrannyAnimationType anim;
+    PackGrannyAnimationTypeV0 anim;
 } ModelFileAnimationV24<optimize=false>;
 
-=> Version: 23, ReferencedFunction: 0xF902C0
+=> Version: 23, ReferencedFunction: 0x1062D00
 typedef struct
 {
     TSTRUCT_ARRAY_PTR_START byte animation TSTRUCT_ARRAY_PTR_END;
-} PackGrannyAnimationType<optimize=false>;
+} PackGrannyAnimationTypeV0<optimize=false>;
 
 typedef struct
 {
@@ -58466,7 +59033,7 @@ typedef struct
 typedef struct
 {
     qword token;
-    PackGrannyAnimationType data;
+    PackGrannyAnimationTypeV0 data;
     float moveSpeed;
     TSTRUCT_ARRAY_PTR_START ModelVisTrackDataV31 visTrackData TSTRUCT_ARRAY_PTR_END;
     TSTRUCT_ARRAY_PTR_START ModelUVAnimationV23 uvAnimData TSTRUCT_ARRAY_PTR_END;
@@ -59091,7 +59658,7 @@ typedef struct
     filename modelReference;
 } ModelFileAnimationBankV19<optimize=false>;
 
-=> Version: 18, ReferencedFunction: 0xF90210
+=> Version: 18, ReferencedFunction: 0x1062C50
 typedef struct
 {
     TSTRUCT_ARRAY_PTR_START byte animation TSTRUCT_ARRAY_PTR_END;
@@ -59225,7 +59792,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START ModelAnimationImportDataV26 imports TSTRUCT_ARRAY_PTR_END;
 } ModelFileAnimationBankV18<optimize=false>;
 
-=> Version: 17, ReferencedFunction: 0xF8FCD0
+=> Version: 17, ReferencedFunction: 0x10626F0
 typedef struct
 {
     TSTRUCT_ARRAY_PTR_START byte animation TSTRUCT_ARRAY_PTR_END;
@@ -59597,7 +60164,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START ModelAnimationImportDataV23 imports TSTRUCT_ARRAY_PTR_END;
 } ModelFileAnimationBankV15<optimize=false>;
 
-=> Version: 14, ReferencedFunction: 0xF8FA90
+=> Version: 14, ReferencedFunction: 0x10624A0
 typedef struct
 {
     qword boneToken;
@@ -59803,7 +60370,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START ModelAnimationImportDataV21 imports TSTRUCT_ARRAY_PTR_END;
 } ModelFileAnimationBankV13<optimize=false>;
 
-=> Version: 12, ReferencedFunction: 0xF8F9E0
+=> Version: 12, ReferencedFunction: 0x10623F0
 typedef struct
 {
     dword boneIndex;
@@ -60744,7 +61311,7 @@ typedef struct
 
 
 ==================================================
- Chunk: COLL, versions: 5, strucTab: 0x13E5AAC
+ Chunk: COLL, versions: 5, strucTab: 0x15BDFC8
 ==================================================
 => Version: 4
 typedef struct
@@ -60813,7 +61380,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START ModelCollisionSurfaceV10 surfaces TSTRUCT_ARRAY_PTR_END;
 } ModelFileCollisionV10<optimize=false>;
 
-=> Version: 3, ReferencedFunction: 0xF90640
+=> Version: 3, ReferencedFunction: 0x1063220
 typedef struct
 {
     float time;
@@ -61018,9 +61585,9 @@ typedef struct
 
 
 ==================================================
- Chunk: GR2S, versions: 5, strucTab: 0x13E5B88
+ Chunk: GR2S, versions: 5, strucTab: 0x15BE004
 ==================================================
-=> Version: 4, ReferencedFunction: 0xF91A50
+=> Version: 4, ReferencedFunction: 0x1064690
 typedef struct
 {
     wchar_ptr filename;
@@ -61033,7 +61600,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START ModelGr2DataV4 gr2Data TSTRUCT_ARRAY_PTR_END;
 } ModelFileGr2sV4<optimize=false>;
 
-=> Version: 3, ReferencedFunction: 0xF916C0
+=> Version: 3, ReferencedFunction: 0x1064300
 typedef struct
 {
     wchar_ptr filename;
@@ -61046,7 +61613,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START ModelGr2DataV3 gr2Data TSTRUCT_ARRAY_PTR_END;
 } ModelFileGr2sV3<optimize=false>;
 
-=> Version: 2, ReferencedFunction: 0xF910E0
+=> Version: 2, ReferencedFunction: 0x1063D80
 typedef struct
 {
     wchar_ptr filename;
@@ -61085,8 +61652,69 @@ typedef struct
 
 
 ==================================================
- Chunk: TOOL, versions: 16, strucTab: 0x13E5BD0
+ Chunk: TOOL, versions: 17, strucTab: 0x15BE040
 ==================================================
+=> Version: 16, ReferencedFunction: 0x1064EC0
+typedef struct
+{
+    TSTRUCT_ARRAY_PTR_START char_ptr cloudNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr emitterNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolCloudV16<optimize=false>;
+
+typedef struct
+{
+    qword blitId;
+    fileref filename;
+} ModelToolBlitTextureV16<optimize=false>;
+
+typedef struct
+{
+    TSTRUCT_ARRAY_PTR_START char_ptr streakNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr anchorNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolStreakV16<optimize=false>;
+
+typedef struct
+{
+    TSTRUCT_ARRAY_PTR_START char_ptr systemNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr boltNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr nodeNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolLightningV16<optimize=false>;
+
+typedef struct
+{
+    TSTRUCT_ARRAY_PTR_START byte animation TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START dword pointers TSTRUCT_ARRAY_PTR_END;
+} PackGrannyAnimationTypeV1<optimize=false>;
+
+typedef struct
+{
+    qword name;
+    wchar_ptr filename;
+    PackGrannyAnimationTypeV1 data;
+} ModelToolAnimationV16<optimize=false>;
+
+typedef struct
+{
+    qword animToken;
+    wchar_ptr cmpGroup;
+    wchar_ptr cmpType;
+} ModelSequenceCompressionInfoV16<optimize=false>;
+
+typedef struct
+{
+    qword modelType;
+    TSTRUCT_ARRAY_PTR_START char_ptr materialNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr obstacleNames TSTRUCT_ARRAY_PTR_END;
+    TPTR_START ModelToolCloudV16 cloudData TPTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelToolBlitTextureV16 blitTextures TSTRUCT_ARRAY_PTR_END;
+    TPTR_START ModelToolStreakV16 streakData TPTR_END;
+    TPTR_START ModelToolLightningV16 lightningData TPTR_END;
+    TSTRUCT_ARRAY_PTR_START qword permutationTokens TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelToolAnimationV16 highLodAnimations TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelSequenceCompressionInfoV16 compressionInfos TSTRUCT_ARRAY_PTR_END;
+    char_ptr region;
+} ModelFileToolV16<optimize=false>;
+
 => Version: 15
 typedef struct
 {
@@ -61116,13 +61744,13 @@ typedef struct
 typedef struct
 {
     TSTRUCT_ARRAY_PTR_START byte animation TSTRUCT_ARRAY_PTR_END;
-} PackGrannyAnimationType<optimize=false>;
+} PackGrannyAnimationTypeV0<optimize=false>;
 
 typedef struct
 {
     qword name;
     wchar_ptr filename;
-    PackGrannyAnimationType data;
+    PackGrannyAnimationTypeV0 data;
 } ModelToolAnimationV15<optimize=false>;
 
 typedef struct
@@ -61176,13 +61804,13 @@ typedef struct
 typedef struct
 {
     TSTRUCT_ARRAY_PTR_START byte animation TSTRUCT_ARRAY_PTR_END;
-} PackGrannyAnimationType<optimize=false>;
+} PackGrannyAnimationTypeV0<optimize=false>;
 
 typedef struct
 {
     qword name;
     wchar_ptr filename;
-    PackGrannyAnimationType data;
+    PackGrannyAnimationTypeV0 data;
 } ModelToolAnimationV14<optimize=false>;
 
 typedef struct
@@ -61235,13 +61863,13 @@ typedef struct
 typedef struct
 {
     TSTRUCT_ARRAY_PTR_START byte animation TSTRUCT_ARRAY_PTR_END;
-} PackGrannyAnimationType<optimize=false>;
+} PackGrannyAnimationTypeV0<optimize=false>;
 
 typedef struct
 {
     qword name;
     wchar_ptr filename;
-    PackGrannyAnimationType data;
+    PackGrannyAnimationTypeV0 data;
 } ModelToolAnimationV13<optimize=false>;
 
 typedef struct
@@ -61286,13 +61914,13 @@ typedef struct
 typedef struct
 {
     TSTRUCT_ARRAY_PTR_START byte animation TSTRUCT_ARRAY_PTR_END;
-} PackGrannyAnimationType<optimize=false>;
+} PackGrannyAnimationTypeV0<optimize=false>;
 
 typedef struct
 {
     qword name;
     wchar_ptr filename;
-    PackGrannyAnimationType data;
+    PackGrannyAnimationTypeV0 data;
 } ModelToolAnimationV12<optimize=false>;
 
 typedef struct
@@ -61308,7 +61936,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START ModelToolAnimationV12 highLodAnimations TSTRUCT_ARRAY_PTR_END;
 } ModelFileToolV12<optimize=false>;
 
-=> Version: 11, ReferencedFunction: 0xF921C0
+=> Version: 11, ReferencedFunction: 0x1064EA0
 typedef struct
 {
     TSTRUCT_ARRAY_PTR_START char_ptr cloudNames TSTRUCT_ARRAY_PTR_END;
@@ -61346,7 +61974,7 @@ typedef struct
     TSTRUCT_ARRAY_PTR_START qword permutationTokens TSTRUCT_ARRAY_PTR_END;
 } ModelFileToolV11<optimize=false>;
 
-=> Version: 10, ReferencedFunction: 0xF92250
+=> Version: 10, ReferencedFunction: 0x1065060
 typedef struct
 {
     TSTRUCT_ARRAY_PTR_START char_ptr cloudNames TSTRUCT_ARRAY_PTR_END;
@@ -61508,7 +62136,7 @@ typedef struct
     TPTR_START ModelToolLightningV7 lightningData TPTR_END;
 } ModelFileToolV7<optimize=false>;
 
-=> Version: 6, ReferencedFunction: 0xF92210
+=> Version: 6, ReferencedFunction: 0x1065020
 typedef struct
 {
     TSTRUCT_ARRAY_PTR_START char_ptr cloudNames TSTRUCT_ARRAY_PTR_END;
@@ -61537,7 +62165,7 @@ typedef struct
     TPTR_START ModelToolStreakV6 streakData TPTR_END;
 } ModelFileToolV6<optimize=false>;
 
-=> Version: 5, ReferencedFunction: 0xF921E0
+=> Version: 5, ReferencedFunction: 0x1064FF0
 typedef struct
 {
     TSTRUCT_ARRAY_PTR_START char_ptr cloudNames TSTRUCT_ARRAY_PTR_END;
@@ -61708,9 +62336,9 @@ typedef struct
 
 
 ==================================================
- Chunk: ROOT, versions: 2, strucTab: 0x13E5D00
+ Chunk: ROOT, versions: 2, strucTab: 0x15BE168
 ==================================================
-=> Version: 1, ReferencedFunction: 0xF91EC0
+=> Version: 1, ReferencedFunction: 0x1064B00
 typedef struct
 {
     qword sequence;
@@ -61739,7 +62367,7 @@ typedef struct
 
 
 ==================================================
- Chunk: GAME, versions: 1, strucTab: 0x13E5BC4
+ Chunk: GAME, versions: 1, strucTab: 0x15BE10C
 ==================================================
 => Version: 0
 typedef struct
@@ -61749,7 +62377,7 @@ typedef struct
 
 
 ==================================================
- Chunk: ICON, versions: 1, strucTab: 0x13E5D48
+ Chunk: ICON, versions: 1, strucTab: 0x15BE1B0
 ==================================================
 => Version: 0
 typedef struct
@@ -61759,9 +62387,9 @@ typedef struct
 
 
 ==================================================
- Chunk: SKEL, versions: 2, strucTab: 0x13E5D54
+ Chunk: SKEL, versions: 2, strucTab: 0x15BE1BC
 ==================================================
-=> Version: 1, ReferencedFunction: 0xF91F10
+=> Version: 1, ReferencedFunction: 0x1064B50
 typedef struct
 {
     dword Flags;
@@ -61990,7 +62618,7 @@ typedef struct
 
 
 ==================================================
- Chunk: PRPS, versions: 1, strucTab: 0x13E5D6C
+ Chunk: PRPS, versions: 1, strucTab: 0x15BE1D4
 ==================================================
 => Version: 0
 typedef struct
@@ -62018,9 +62646,9 @@ typedef struct
 
 
 ==================================================
- Chunk: GEOM, versions: 2, strucTab: 0x13E5D78
+ Chunk: GEOM, versions: 2, strucTab: 0x15BE1E0
 ==================================================
-=> Version: 1, ReferencedFunction: 0xF90E70
+=> Version: 1, ReferencedFunction: 0x1063AC0
 typedef struct
 {
     word index;
@@ -62155,7 +62783,7 @@ typedef struct
 
 
 ==================================================
- Chunk: EXPA, versions: 4, strucTab: 0x13E5D90
+ Chunk: EXPA, versions: 4, strucTab: 0x15BE1F8
 ==================================================
 => Version: 3
 typedef struct
@@ -62247,7 +62875,7 @@ typedef struct
 
 
 ==================================================
- Chunk: PHYS, versions: 9, strucTab: 0x14A0968
+ Chunk: PHYS, versions: 9, strucTab: 0x16794F0
 ==================================================
 => Version: 8
 typedef struct
@@ -62625,7 +63253,7 @@ typedef struct
 
 
 ==================================================
- Chunk: ANIM, versions: 3, strucTab: 0x14A09D4
+ Chunk: ANIM, versions: 3, strucTab: 0x167955C
 ==================================================
 => Version: 2
 typedef struct
@@ -62777,7 +63405,7 @@ typedef struct
 
 
 ==================================================
- Chunk: GAME, versions: 7, strucTab: 0x14A0A28
+ Chunk: GAME, versions: 7, strucTab: 0x1679580
 ==================================================
 => Version: 6
 typedef struct
@@ -63088,7 +63716,7 @@ typedef struct
 
 
 ==================================================
- Chunk: SKEL, versions: 4, strucTab: 0x14A0A7C
+ Chunk: SKEL, versions: 4, strucTab: 0x16795D4
 ==================================================
 => Version: 3
 typedef struct
@@ -63260,7 +63888,7 @@ typedef struct
 
 
 ==================================================
- Chunk: MFST, versions: 7, strucTab: 0x14A46E8
+ Chunk: MFST, versions: 7, strucTab: 0x167D290
 ==================================================
 => Version: 6
 typedef struct
@@ -63467,7 +64095,7 @@ typedef struct
 
 
 ==================================================
- Chunk: ARMF, versions: 2, strucTab: 0x14A4748
+ Chunk: ARMF, versions: 2, strucTab: 0x167D2F0
 ==================================================
 => Version: 1
 typedef struct
@@ -63511,7 +64139,7 @@ typedef struct
 
 
 ==================================================
- Chunk: main, versions: 1, strucTab: 0x15086A0
+ Chunk: main, versions: 1, strucTab: 0x16CE61C
 ==================================================
 => Version: 0
 typedef struct
@@ -63531,7 +64159,7 @@ typedef struct
 
 
 ==================================================
- Chunk: main, versions: 1, strucTab: 0x15086B8
+ Chunk: main, versions: 1, strucTab: 0x16CE674
 ==================================================
 => Version: 0
 typedef struct
@@ -63543,7 +64171,7 @@ typedef struct
 
 
 ==================================================
- Chunk: main, versions: 2, strucTab: 0x15086D0
+ Chunk: main, versions: 2, strucTab: 0x16CE720
 ==================================================
 => Version: 1
 typedef struct
@@ -63574,7 +64202,7 @@ typedef struct
 
 
 ==================================================
- Chunk: comp, versions: 19, strucTab: 0x150D4F0
+ Chunk: comp, versions: 19, strucTab: 0x16D3470
 ==================================================
 => Version: 18
 typedef struct
@@ -63732,7 +64360,7 @@ typedef struct
     word configVersion;
 } PackCompositeV18<optimize=false>;
 
-=> Version: 17, ReferencedFunction: 0x107D060
+=> Version: 17, ReferencedFunction: 0x121A9B0
 typedef struct
 {
     wchar_ptr name;
@@ -63887,7 +64515,7 @@ typedef struct
     word configVersion;
 } PackCompositeV17<optimize=false>;
 
-=> Version: 16, ReferencedFunction: 0x107CCC0
+=> Version: 16, ReferencedFunction: 0x121A610
 typedef struct
 {
     wchar_ptr name;
@@ -64596,7 +65224,7 @@ typedef struct
     word configVersion;
 } PackCompositeV12<optimize=false>;
 
-=> Version: 11, ReferencedFunction: 0x107CC80
+=> Version: 11, ReferencedFunction: 0x121A5D0
 typedef struct
 {
     wchar_ptr name;
@@ -65706,7 +66334,7 @@ typedef struct
 
 
 ==================================================
- Chunk: Main, versions: 1, strucTab: 0x150D674
+ Chunk: Main, versions: 1, strucTab: 0x16D372C
 ==================================================
 => Version: 0
 typedef struct
@@ -65779,7 +66407,7 @@ typedef struct
 
 
 ==================================================
- Chunk: Main, versions: 1, strucTab: 0x150D774
+ Chunk: Main, versions: 1, strucTab: 0x16D38A0
 ==================================================
 => Version: 0
 typedef struct
@@ -65795,9 +66423,9 @@ typedef struct
 
 
 ==================================================
- Chunk: anim, versions: 3, strucTab: 0x150D81C
+ Chunk: anim, versions: 3, strucTab: 0x16D3924
 ==================================================
-=> Version: 2, ReferencedFunction: 0x107D0C0
+=> Version: 2, ReferencedFunction: 0x121AA70
 typedef struct
 {
     fileref ModelFile;
@@ -65862,24 +66490,7 @@ typedef struct
 
 
 ==================================================
- Chunk: eula, versions: 1, strucTab: 0x150D9D8
-==================================================
-=> Version: 0
-typedef struct
-{
-    byte Language;
-    wchar_ptr Text;
-} PackEulaLanguageV0<optimize=false>;
-
-typedef struct
-{
-    TSTRUCT_ARRAY_PTR_START PackEulaLanguageV0 Language TSTRUCT_ARRAY_PTR_END;
-    byte Version;
-} PackEulaV0<optimize=false>;
-
-
-==================================================
- Chunk: mach, versions: 1, strucTab: 0x150D8A0
+ Chunk: mach, versions: 1, strucTab: 0x16D3918
 ==================================================
 => Version: 0
 typedef struct
@@ -65954,7 +66565,7 @@ typedef struct
 
 
 ==================================================
- Chunk: fall, versions: 1, strucTab: 0x150D768
+ Chunk: fall, versions: 1, strucTab: 0x16D3744
 ==================================================
 => Version: 0
 typedef struct
@@ -65970,7 +66581,7 @@ typedef struct
 
 
 ==================================================
- Chunk: seqn, versions: 1, strucTab: 0x150D6DC
+ Chunk: seqn, versions: 1, strucTab: 0x16D3720
 ==================================================
 => Version: 0
 typedef struct
@@ -66032,7 +66643,7 @@ typedef struct
 
 
 ==================================================
- Chunk: cnfg, versions: 1, strucTab: 0x150DA20
+ Chunk: cnfg, versions: 1, strucTab: 0x16D39F4
 ==================================================
 => Version: 0
 typedef struct
@@ -66090,7 +66701,24 @@ typedef struct
 
 
 ==================================================
- Chunk: TKAC, versions: 1, strucTab: 0x153C478
+ Chunk: eula, versions: 1, strucTab: 0x16D3AF0
+==================================================
+=> Version: 0
+typedef struct
+{
+    byte Language;
+    wchar_ptr Text;
+} PackEulaLanguageV0<optimize=false>;
+
+typedef struct
+{
+    TSTRUCT_ARRAY_PTR_START PackEulaLanguageV0 Language TSTRUCT_ARRAY_PTR_END;
+    byte Version;
+} PackEulaV0<optimize=false>;
+
+
+==================================================
+ Chunk: TKAC, versions: 1, strucTab: 0x17057F0
 ==================================================
 => Version: 0
 typedef struct
@@ -66107,9 +66735,9 @@ typedef struct
 
 
 ==================================================
- Chunk: mfst, versions: 3, strucTab: 0x1564740
+ Chunk: mfst, versions: 3, strucTab: 0x172E418
 ==================================================
-=> Version: 2, ReferencedFunction: 0x1172480
+=> Version: 2, ReferencedFunction: 0x1332540
 typedef struct
 {
     byte16 mapGUID;
