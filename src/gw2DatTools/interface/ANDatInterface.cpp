@@ -100,34 +100,34 @@ namespace gw2dt {
 
 			uint32_t aCurrentIndex( 0 );
 
-			for ( auto itMapping = _pMapping->entries.begin( ); itMapping != _pMapping->entries.end( ); ++itMapping ) {
-				if ( itMapping->mftIndex == 0 && itMapping->id == 0 ) {
+			for ( auto& itMapping : _pMapping->entries ) {
+				if ( itMapping.mftIndex == 0 && itMapping.id == 0 ) {
 					continue;
 				} else {
-					auto itMftDict = aMftIndexDictHelper.find( itMapping->mftIndex );
+					auto itMftDict = aMftIndexDictHelper.find( itMapping.mftIndex );
 					if ( itMftDict != aMftIndexDictHelper.end( ) ) {
 						FileRecord* pFileRecord = itMftDict->second;
 
-						if ( itMapping->id < pFileRecord->fileId ) {
-							pFileRecord->baseId = itMapping->id;
-						} else if ( itMapping->id > pFileRecord->fileId ) {
+						if ( itMapping.id < pFileRecord->fileId ) {
+							pFileRecord->baseId = itMapping.id;
+						} else if ( itMapping.id > pFileRecord->fileId ) {
 							pFileRecord->baseId = pFileRecord->fileId;
-							pFileRecord->fileId = itMapping->id;
+							pFileRecord->fileId = itMapping.id;
 						}
 					} else {
 						FileRecord& aFileRecord = _fileRecordVect[aCurrentIndex];
 						++aCurrentIndex;
-						format::MftEntry& aMftEntry = _pMft->entries[itMapping->mftIndex - 1];
+						format::MftEntry& aMftEntry = _pMft->entries[itMapping.mftIndex - 1];
 
 						aFileRecord.offset = aMftEntry.offset;
 						aFileRecord.size = aMftEntry.size;
 
 						aFileRecord.baseId = 0;
-						aFileRecord.fileId = itMapping->id;
+						aFileRecord.fileId = itMapping.id;
 
 						aFileRecord.isCompressed = ( aMftEntry.compressionFlag != 0 );
 
-						aMftIndexDictHelper.insert( std::make_pair( itMapping->mftIndex, &aFileRecord ) );
+						aMftIndexDictHelper.insert( std::make_pair( itMapping.mftIndex, &aFileRecord ) );
 					}
 				}
 			}
@@ -139,11 +139,11 @@ namespace gw2dt {
 			_fileIdDict.rehash( _fileRecordVect.size( ) );
 			_baseIdDict.rehash( _fileRecordVect.size( ) );
 
-			for ( auto itFileRecord = _fileRecordVect.begin( ); itFileRecord != _fileRecordVect.end( ); ++itFileRecord ) {
-				_fileIdDict.insert( std::make_pair( itFileRecord->fileId, &( *itFileRecord ) ) );
+			for ( auto& itFileRecord : _fileRecordVect ) {
+				_fileIdDict.insert( std::make_pair( itFileRecord.fileId, &( itFileRecord ) ) );
 
-				if ( itFileRecord->baseId != 0 ) {
-					_baseIdDict.insert( std::make_pair( itFileRecord->baseId, &( *itFileRecord ) ) );
+				if ( itFileRecord.baseId != 0 ) {
+					_baseIdDict.insert( std::make_pair( itFileRecord.baseId, &( itFileRecord ) ) );
 				}
 			}
 		}

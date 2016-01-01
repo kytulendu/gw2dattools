@@ -77,8 +77,8 @@ namespace gw2dt {
 			uint8_t sMaxCodeBitsLength,
 			uint16_t sMaxSymbolValue>
 			bool HuffmanTreeBuilder<SymbolType, sMaxCodeBitsLength, sMaxSymbolValue>::empty( ) const {
-				for ( auto it = _symbolListByBitsHeadExistenceArray.begin( ); it != _symbolListByBitsHeadExistenceArray.end( ); ++it ) {
-					if ( *it == true ) {
+				for ( auto& it : _symbolListByBitsHeadExistenceArray ) {
+					if ( it == true ) {
 						return false;
 					}
 				}
