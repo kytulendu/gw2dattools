@@ -8,7 +8,7 @@
 #include "gw2DatTools/dllMacros.h"
 
 namespace gw2dt {
-	namespace interface {
+	namespace datfile {
 
 		class GW2DATTOOLS_API ANDatInterface {
 		public:

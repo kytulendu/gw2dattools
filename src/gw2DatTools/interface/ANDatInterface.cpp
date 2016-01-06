@@ -12,7 +12,7 @@
 #include "../format/Utils.h"
 
 namespace gw2dt {
-	namespace interface {
+	namespace datfile {
 
 		class ANDatInterfaceImpl : public ANDatInterface {
 		public:
