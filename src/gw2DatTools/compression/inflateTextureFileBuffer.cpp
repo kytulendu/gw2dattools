@@ -1,5 +1,6 @@
 #include "gw2DatTools/compression/inflateTextureFileBuffer.h"
 
+#include <cstdlib>
 #include <memory.h>
 
 #include "gw2DatTools/exception/Exception.h"

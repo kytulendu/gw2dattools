@@ -1,5 +1,6 @@
 #include "gw2DatTools/compression/inflateDatFileBuffer.h"
 
+#include <cstdlib>
 #include <memory.h>
 #include <iostream>
 

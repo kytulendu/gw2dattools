@@ -1,12 +1,13 @@
 #include "gw2DatTools/c_api/compression_inflateDatFileBuffer.h"
 
+#include <cstdio>
 #include <exception>
 
 #include "gw2DatTools/compression/inflateDatFileBuffer.h"
 
 #ifdef __cplusplus
 extern "C" {
-#endif 
+#endif
 
 	GW2DATTOOLS_API uint8_t* GW2DATTOOLS_APIENTRY compression_inflateDatFileBuffer( const uint32_t iInputSize, uint8_t* iInputTab, uint32_t* ioOutputSize, uint8_t* ioOutputTab ) {
 		if ( ioOutputSize == nullptr ) {
@@ -24,4 +25,4 @@ extern "C" {
 
 #ifdef __cplusplus
 }
-#endif 
+#endif
