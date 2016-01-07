@@ -4,10 +4,14 @@ namespace gw2dt {
 	namespace exception {
 
 		Exception::Exception( const char* iReason ) :
-			std::exception( iReason ) {
+			errorMessage( iReason ) {
 		}
 
 		Exception::~Exception( ) {
+		}
+
+		const char *Exception::what( ) const throw( ) {
+			return errorMessage.c_str( );
 		}
 
 	}
