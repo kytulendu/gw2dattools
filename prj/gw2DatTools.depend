@@ -1,0 +1,125 @@
+# depslib dependency file v1.0
+1452094807 source:z:\dev\gw2browser\extern\gw2dattools\src\gw2dattools\c_api\compression_inflatedatfilebuffer.cpp
+	"gw2DatTools/c_api/compression_inflateDatFileBuffer.h"
+	<cstdio>
+	<exception>
+	"gw2DatTools/compression/inflateDatFileBuffer.h"
+
+1409471190 z:\dev\gw2browser\extern\gw2dattools\include\gw2dattools\c_api\compression_inflatedatfilebuffer.h
+	<stdint.h>
+	<stdlib.h>
+	"gw2DatTools/dllMacros.h"
+
+1397463933 z:\dev\gw2browser\extern\gw2dattools\include\gw2dattools\dllmacros.h
+
+1409471190 z:\dev\gw2browser\extern\gw2dattools\include\gw2dattools\compression\inflatedatfilebuffer.h
+	<cstdint>
+	<string>
+	"gw2DatTools/dllMacros.h"
+
+1427019730 source:z:\dev\gw2browser\extern\gw2dattools\src\gw2dattools\compression\huffmantreeutils.cpp
+	"huffmanTreeUtils.h"
+	<memory.h>
+
+1409471190 z:\dev\gw2browser\extern\gw2dattools\src\gw2dattools\compression\huffmantreeutils.h
+	"gw2DatTools/exception/Exception.h"
+	<cstdint>
+
+1452099732 z:\dev\gw2browser\extern\gw2dattools\include\gw2dattools\exception\exception.h
+	<exception>
+	<string>
+	"gw2DatTools/dllMacros.h"
+
+1452094824 source:z:\dev\gw2browser\extern\gw2dattools\src\gw2dattools\compression\inflatedatfilebuffer.cpp
+	"gw2DatTools/compression/inflateDatFileBuffer.h"
+	<cstdlib>
+	<memory.h>
+	<iostream>
+	"gw2DatTools/exception/Exception.h"
+	"HuffmanTree.h"
+	"../utils/BitArray.h"
+
+1397463933 z:\dev\gw2browser\extern\gw2dattools\src\gw2dattools\compression\huffmantree.h
+	<array>
+	<cstdint>
+	"../utils/BitArray.h"
+	"HuffmanTree.i"
+
+1427020401 z:\dev\gw2browser\extern\gw2dattools\src\gw2dattools\utils\bitarray.h
+	<cstdint>
+	"BitArray.i"
+
+1397463933 z:\dev\gw2browser\extern\gw2dattools\src\gw2dattools\utils\bitarray.i
+	"gw2DatTools/exception/Exception.h"
+	<cassert>
+
+1452095084 z:\dev\gw2browser\extern\gw2dattools\src\gw2dattools\compression\huffmantree.i
+	"../utils/BitArray.h"
+
+1452095607 source:z:\dev\gw2browser\extern\gw2dattools\src\gw2dattools\compression\inflatetexturefilebuffer.cpp
+	"gw2DatTools/compression/inflateTextureFileBuffer.h"
+	<cstdlib>
+	<memory.h>
+	"gw2DatTools/exception/Exception.h"
+	"huffmanTreeUtils.h"
+	<iostream>
+	<vector>
+
+1409471190 z:\dev\gw2browser\extern\gw2dattools\include\gw2dattools\compression\inflatetexturefilebuffer.h
+	<cstdint>
+	<string>
+	"gw2DatTools/dllMacros.h"
+
+1452094117 source:z:\dev\gw2browser\extern\gw2dattools\src\gw2dattools\exception\exception.cpp
+	"gw2DatTools/exception/Exception.h"
+
+1397463933 source:z:\dev\gw2browser\extern\gw2dattools\src\gw2dattools\format\andat.cpp
+	"ANDat.h"
+	<istream>
+	"Utils.h"
+
+1397463933 z:\dev\gw2browser\extern\gw2dattools\src\gw2dattools\format\andat.h
+	<memory>
+	<cstdint>
+
+1397463933 z:\dev\gw2browser\extern\gw2dattools\src\gw2dattools\format\utils.h
+	<vector>
+
+1397463933 source:z:\dev\gw2browser\extern\gw2dattools\src\gw2dattools\format\mapping.cpp
+	"Mapping.h"
+	<istream>
+	"Utils.h"
+	<iostream>
+
+1397463933 z:\dev\gw2browser\extern\gw2dattools\src\gw2dattools\format\mapping.h
+	<cstdint>
+	<vector>
+	<memory>
+
+1397463933 source:z:\dev\gw2browser\extern\gw2dattools\src\gw2dattools\format\mft.cpp
+	"Mft.h"
+	<istream>
+	"Utils.h"
+
+1397463933 z:\dev\gw2browser\extern\gw2dattools\src\gw2dattools\format\mft.h
+	<cstdint>
+	<vector>
+	<memory>
+
+1451836612 source:z:\dev\gw2browser\extern\gw2dattools\src\gw2dattools\interface\andatinterface.cpp
+	"gw2DatTools/interface/ANDatInterface.h"
+	<fstream>
+	<unordered_map>
+	<algorithm>
+	"gw2DatTools/exception/Exception.h"
+	"../format/ANDat.h"
+	"../format/Mft.h"
+	"../format/Mapping.h"
+	"../format/Utils.h"
+
+1451836606 z:\dev\gw2browser\extern\gw2dattools\include\gw2dattools\interface\andatinterface.h
+	<cstdint>
+	<vector>
+	<memory>
+	"gw2DatTools/dllMacros.h"
+
