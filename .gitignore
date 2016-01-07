@@ -2,6 +2,7 @@ bin
 ipch
 build
 lib
+obj
 *.sdf
 *.suo
 *.user
