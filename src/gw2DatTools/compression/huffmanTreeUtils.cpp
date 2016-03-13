@@ -109,7 +109,7 @@ namespace gw2dt {
 				throw exception::Exception( "Too many bits." );
 			}
 
-			if ( iSymbol >= MaxSymbolValue ) {
+			if ( iSymbol >= static_cast<uint16_t>( MaxSymbolValue ) ) {
 				throw exception::Exception( "Too high symbol." );
 			}
 
