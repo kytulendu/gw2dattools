@@ -18,7 +18,8 @@
 					<Add directory="../../include" />
 				</Compiler>
 				<Linker>
-					<Add library="..\..\lib\Debug\libgw2DatTools.a" />
+					<Add library="libgw2DatTools.a" />
+					<Add directory="../../lib/Debug" />
 				</Linker>
 			</Target>
 			<Target title="Release">
@@ -34,7 +35,8 @@
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
-					<Add library="..\..\lib\Release\libgw2DatTools.a" />
+					<Add library="libgw2DatTools.a" />
+					<Add directory="../../lib/Debug" />
 				</Linker>
 			</Target>
 		</Build>
