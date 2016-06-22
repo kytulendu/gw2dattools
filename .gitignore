@@ -9,3 +9,4 @@ obj
 *.opensdf
 *.depend
 *.layout
+*.db
