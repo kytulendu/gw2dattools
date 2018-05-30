@@ -17,7 +17,7 @@ static getAsciiName(iAddress)
 static add(iArrayId, iElement)
 {
     auto aArrayId, aNextIndex;
- 
+
     aNextIndex = GetLastIndex(AR_LONG, iArrayId) + 1;
     SetArrayLong(iArrayId, aNextIndex, iElement);
 }
@@ -26,14 +26,14 @@ static isIn(iArrayId, iElement)
 {
     auto aCurrentIndex;
     aCurrentIndex = GetFirstIndex(AR_LONG, iArrayId);
- 
+
     while (aCurrentIndex != -1)
     {
         if (GetArrayElement(AR_LONG, iArrayId, aCurrentIndex) == iElement)
         {
             return 1;
         }
- 
+
         aCurrentIndex = GetNextIndex(AR_LONG, iArrayId, aCurrentIndex);
     }
     return 0;
@@ -42,31 +42,31 @@ static isIn(iArrayId, iElement)
 static isANStruct(iAddress)
 {
     auto aCurrentAddress, aLoopGuard;
-    
+
     aLoopGuard = 50;
     aCurrentAddress = iAddress;
-    
+
     while (Word(aCurrentAddress) != 0 && aLoopGuard > 0)
     {
         if (Word(aCurrentAddress) > 0x1D)
         {
             return 0;
         }
-        
+
         aCurrentAddress = aCurrentAddress +  16;
         aLoopGuard = aLoopGuard - 1;
     }
-    
+
     return (aLoopGuard != 0 && Dword(aCurrentAddress + 4) != BADADDR && IS_ASCII(Dword(aCurrentAddress + 4)));
 }
 
 static isANStructTab(iAddress, iNumber)
 {
     auto aCurrentAddress, aLoopIndex;
-    
+
     aLoopIndex = 0;
     aCurrentAddress = iAddress;
-    
+
     while (aLoopIndex < iNumber)
     {
         if (Dword(aCurrentAddress) !=0)
@@ -79,7 +79,7 @@ static isANStructTab(iAddress, iNumber)
         aCurrentAddress = aCurrentAddress + 12;
         aLoopIndex = aLoopIndex + 1;
     }
-    
+
     return (aLoopIndex == iNumber);
 }
 
@@ -134,7 +134,7 @@ static parseMember(iAddress, iParsedStructsId, iOutputFile)
     auto aTypeId, aMemberName, aOptimized, aTempOutput;
     aMemberName = getAsciiName(Dword(iAddress + 4));
     aTypeId = Word(iAddress);
-    
+
     if (aTypeId == 0x00)
     {
         aTempOutput = form("ERROR %s", aMemberName);
@@ -292,28 +292,27 @@ static parseMember(iAddress, iParsedStructsId, iOutputFile)
         Message("ERROR: Encountered > 0x1D as a member typeId.");
         aOptimized = 1;
     }
-    
+
     aTempOutput = form("    %s;\n", aTempOutput);
-    
+
     return aTempOutput;
 }
 
 static parseStruct(iAddress, iParsedStructsId, iOutputFile)
 {
-    auto aOutput, aStructName, aCurrentAddress, aOptimized, aAlreadyParsed, aMemberOutput;
-    
-    aOptimized = 0;
+    auto aOutput, aStructName, aCurrentAddress, aAlreadyParsed, aMemberOutput;
+
     aAlreadyParsed = isIn(iParsedStructsId, iAddress);
     add(iParsedStructsId, iAddress);
-    
-    aCurrentAddress = iAddress; 
-    
+
+    aCurrentAddress = iAddress;
+
     // Special case for simple types
     if (Byte(Dword(aCurrentAddress + 4)) == 0)
     {
         return getSimpleTypeName(iAddress);
     }
-    
+
     while (Word(aCurrentAddress) != 0)
     {
         if (!aAlreadyParsed)
@@ -321,52 +320,44 @@ static parseStruct(iAddress, iParsedStructsId, iOutputFile)
             aMemberOutput = parseMember(aCurrentAddress, iParsedStructsId, iOutputFile);
             aOutput = form("%s%s", aOutput, aMemberOutput);
         }
-        
+
         aCurrentAddress = aCurrentAddress +  16;
     }
-    
+
     aStructName = getAsciiName(Dword(aCurrentAddress + 4));
-    
+
     if (!aAlreadyParsed)
     {
-        if (aOptimized)
-        {
-            aOutput = form("typedef struct \n{\n%s} %s;\n\n", aOutput, aStructName);
-        }
-        else
-        {
-            aOutput = form("typedef struct \n{\n%s} %s<optimize=false>;\n\n", aOutput, aStructName);
-        }
-        
+        aOutput = form("typedef struct {\n%s} %s;\n\n", aOutput, aStructName);
         fprintf(iOutputFile, "%s", aOutput);
     }
-    
+
     return aStructName;
 }
 
 static parseStructTab(iANSTructTabOffset, iNbOfVersions, iOutputFile)
 {
     auto aCurrentAddress, aLoopIndex, aParsedStructsId, aSubAddress;
-    
+
     aLoopIndex = iNbOfVersions - 1;
     aCurrentAddress = iANSTructTabOffset;
-    
+
     while (aLoopIndex >= 0)
     {
         DeleteArray(GetArrayId("PARSED_STRUCTS"));
         aParsedStructsId = CreateArray("PARSED_STRUCTS");
-        
+
         aCurrentAddress = Dword(iANSTructTabOffset + 12 * aLoopIndex);
 		aSubAddress = Dword(iANSTructTabOffset + 12 * aLoopIndex + 4);
         if (aCurrentAddress !=0)
         {
 			if (aSubAddress != 0)
 			{
-				fprintf(iOutputFile, "=> Version: %d, ReferencedFunction: 0x%X\n", aLoopIndex, aSubAddress);
+				fprintf(iOutputFile, "/* Version: %d, ReferencedFunction: 0x%X */\n", aLoopIndex, aSubAddress);
 			}
 			else
 			{
-				fprintf(iOutputFile, "=> Version: %d\n", aLoopIndex);
+				fprintf(iOutputFile, "/* Version: %d */\n", aLoopIndex);
 			}
             parseStruct(aCurrentAddress, aParsedStructsId, iOutputFile);
         }
@@ -377,32 +368,32 @@ static parseStructTab(iANSTructTabOffset, iNbOfVersions, iOutputFile)
 static main(void)
 {
     auto aParsedTablesId;
-    
+
     // First step detecting rdata and text segments
     auto aCurrentSeg, aCurrentAddress, aMiscAddress;
     auto aMinDataSeg, aMaxDataSeg;
     auto aMinRDataSeg, aMaxRDataSeg;
     auto aMinTextSeg, aMaxTextSeg;
-    
+
     auto aChunkName, aNbOfVersions, aANSTructTabOffset;
-    
+
     auto aOutputFile, aReportFile;
     aOutputFile = fopen("output.txt", "w");
-    
+
     Message("ANet structs script started.\n");
-    
+
     aMinDataSeg = 0;
     aMaxDataSeg = 0;
     aMinRDataSeg = 0;
     aMaxRDataSeg = 0;
     aMinTextSeg = 0;
     aMaxTextSeg = 0;
-    
+
     DeleteArray(GetArrayId("PARSED_TABLES"));
     aParsedTablesId = CreateArray("PARSED_TABLES");
-    
+
     aCurrentSeg = FirstSeg();
-    
+
     while (aCurrentSeg != BADADDR)
     {
         if (SegName(aCurrentSeg)==".rdata")
@@ -422,17 +413,17 @@ static main(void)
         }
         aCurrentSeg = NextSeg(aCurrentSeg);
     }
-    
+
     if (aMinRDataSeg == 0)
     {
         aMinRDataSeg=aMinTextSeg;
         aMaxRDataSeg=aMaxTextSeg;
     }
-    
+
     Message(".data: %08.8Xh - %08.8Xh, .rdata: %08.8Xh - %08.8Xh, .text %08.8Xh - %08.8Xh\n", aMinDataSeg, aMaxDataSeg, aMinRDataSeg, aMaxRDataSeg, aMinTextSeg, aMaxTextSeg);
-    
+
     Message("Parsing .rdata for chunk_infos.\n");
-    
+
     aCurrentAddress = aMinRDataSeg;
     while (aCurrentAddress < aMaxRDataSeg)
     {
@@ -443,7 +434,7 @@ static main(void)
             {
                 aChunkName = form("%s%c", aChunkName, Byte(aCurrentAddress + 3));
             }
-            
+
             aNbOfVersions = Dword(aCurrentAddress + 4);
             if (aNbOfVersions > 0 && aNbOfVersions < 100)
             {
@@ -455,10 +446,11 @@ static main(void)
                         if (!isIn(aParsedTablesId, aANSTructTabOffset))
                         {
                             add(aParsedTablesId, aANSTructTabOffset);
-                            
-                            fprintf(aOutputFile, "==================================================\n");
-                            fprintf(aOutputFile, " Chunk: %s, versions: %d, strucTab: 0x%X\n", aChunkName, aNbOfVersions, aANSTructTabOffset);
-                            fprintf(aOutputFile, "==================================================\n");
+
+                            fprintf(aOutputFile, "/* ===============================================\n");
+                            fprintf(aOutputFile, " * Chunk: %s, versions: %d, strucTab: 0x%X\n", aChunkName, aNbOfVersions, aANSTructTabOffset);
+                            fprintf(aOutputFile, " * ===============================================\n");
+							fprintf(aOutputFile, " */\n\n");
                             parseStructTab(aANSTructTabOffset, aNbOfVersions, aOutputFile);
                             fprintf(aOutputFile, "\n");
                         }
@@ -466,15 +458,15 @@ static main(void)
                 }
             }
         }
-        
+
         aCurrentAddress = aCurrentAddress + 4;
     }
-    
+
     DeleteArray(aParsedTablesId);
-    
+
     Message("ANet structs script ended.\n");
-    
+
     fclose(aOutputFile);
-    
+
     Exec("output.txt");
 }
