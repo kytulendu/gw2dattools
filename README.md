@@ -1,7 +1,10 @@
 gw2dattools
 ===========
 
-Collection of tools to make building programs for the gw2 dat file easier.
+Collection of tools to make building programs for the Guild Wars 2's dat file easier.
+
+Restrictions
+------------
 
 This library use some of C++11 feature, it need C++11 capable compiler in order to compile it.
 
