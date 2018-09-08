@@ -5,7 +5,7 @@
 #include <vector>
 #include <memory>
 
-#include "gw2DatTools/dllMacros.h"
+#include "gw2dattools/dllMacros.h"
 
 namespace gw2dt {
     namespace datfile {

@@ -1,9 +1,9 @@
-#include "gw2DatTools/c_api/compression_inflateDatFileBuffer.h"
+#include "gw2dattools/c_api/compression_inflateDatFileBuffer.h"
 
 #include <cstdio>
 #include <exception>
 
-#include "gw2DatTools/compression/inflateDatFileBuffer.h"
+#include "gw2dattools/compression/inflateDatFileBuffer.h"
 
 #ifdef __cplusplus
 extern "C" {

@@ -1,7 +1,7 @@
 #ifndef GW2DATTOOLS_COMPRESSION_HUFFMANTREEUTILS_H
 #define GW2DATTOOLS_COMPRESSION_HUFFMANTREEUTILS_H
 
-#include "gw2DatTools/exception/Exception.h"
+#include "gw2dattools/exception/Exception.h"
 
 #include <cstdint>
 

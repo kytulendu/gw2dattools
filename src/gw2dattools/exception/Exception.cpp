@@ -1,4 +1,4 @@
-#include "gw2DatTools/exception/Exception.h"
+#include "gw2dattools/exception/Exception.h"
 
 namespace gw2dt {
     namespace exception {

@@ -1,7 +1,7 @@
 #ifndef GW2DATTOOLS_UTILS_BITARRAY_I
 #define GW2DATTOOLS_UTILS_BITARRAY_I
 
-#include "gw2DatTools/exception/Exception.h"
+#include "gw2dattools/exception/Exception.h"
 
 #include <cassert>
 

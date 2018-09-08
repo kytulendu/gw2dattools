@@ -1,9 +1,9 @@
-#include "gw2DatTools/compression/inflateTextureFileBuffer.h"
+#include "gw2dattools/compression/inflateTextureFileBuffer.h"
 
 #include <cstdlib>
 #include <memory.h>
 
-#include "gw2DatTools/exception/Exception.h"
+#include "gw2dattools/exception/Exception.h"
 
 #include "huffmanTreeUtils.h"
 

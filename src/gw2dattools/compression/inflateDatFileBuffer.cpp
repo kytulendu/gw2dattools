@@ -1,10 +1,10 @@
-#include "gw2DatTools/compression/inflateDatFileBuffer.h"
+#include "gw2dattools/compression/inflateDatFileBuffer.h"
 
 #include <cstdlib>
 #include <memory.h>
 #include <iostream>
 
-#include "gw2DatTools/exception/Exception.h"
+#include "gw2dattools/exception/Exception.h"
 
 #include "HuffmanTree.h"
 #include "../utils/BitArray.h"

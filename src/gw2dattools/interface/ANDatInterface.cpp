@@ -1,10 +1,10 @@
-#include "gw2DatTools/interface/ANDatInterface.h"
+#include "gw2dattools/interface/ANDatInterface.h"
 
 #include <fstream>
 #include <unordered_map>
 #include <algorithm>
 
-#include "gw2DatTools/exception/Exception.h"
+#include "gw2dattools/exception/Exception.h"
 
 #include "../format/ANDat.h"
 #include "../format/Mft.h"

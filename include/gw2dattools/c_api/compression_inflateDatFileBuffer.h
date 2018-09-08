@@ -4,11 +4,11 @@
 #include <stdint.h>
 #include <stdlib.h>
 
-#include "gw2DatTools/dllMacros.h"
+#include "gw2dattools/dllMacros.h"
 
 #ifdef __cplusplus
 extern "C" {
-#endif 
+#endif
 
     /** @Inputs:
     *    - iInputSize: Size of the input buffer
@@ -26,6 +26,6 @@ extern "C" {
 
 #ifdef __cplusplus
 }
-#endif 
+#endif
 
 #endif // GW2DATTOOLS_CAPI_COMPRESSION_INFLATEBUFFER_H

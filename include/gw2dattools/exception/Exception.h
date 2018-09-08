@@ -4,7 +4,7 @@
 #include <exception>
 #include <string>
 
-#include "gw2DatTools/dllMacros.h"
+#include "gw2dattools/dllMacros.h"
 
 namespace gw2dt {
     namespace exception {
