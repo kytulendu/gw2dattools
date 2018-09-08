@@ -14,7 +14,6 @@
 				<Option compiler="gcc" />
 				<Option createDefFile="1" />
 				<Compiler>
-					<Add option="-std=c++11" />
 					<Add option="-Wall" />
 					<Add option="-g" />
 					<Add directory="../include" />
@@ -32,7 +31,6 @@
 				<Option createDefFile="1" />
 				<Compiler>
 					<Add option="-O2" />
-					<Add option="-std=c++11" />
 					<Add option="-Wall" />
 					<Add option="-D__NO_INLINE__" />
 					<Add directory="../include" />
