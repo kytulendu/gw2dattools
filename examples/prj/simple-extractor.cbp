@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="simpleExtractor" />
+		<Option title="simple-extractor" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
@@ -12,7 +12,6 @@
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
-					<Add option="-std=c++11" />
 					<Add option="-g" />
 					<Add directory="../../include" />
 				</Compiler>
@@ -28,7 +27,6 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
-					<Add option="-std=c++11" />
 					<Add directory="../../include" />
 				</Compiler>
 				<Linker>
