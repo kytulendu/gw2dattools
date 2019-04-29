@@ -3,6 +3,11 @@ ipch
 build
 lib
 obj
+CMakeFiles
+CMakeCache.txt
+install_manifest.txt
+Makefile
+*.cmake
 *.sdf
 *.suo
 *.user
