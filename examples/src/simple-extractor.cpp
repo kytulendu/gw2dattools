@@ -4,13 +4,13 @@
 #include <sstream>
 #include <fstream>
 
-#include "gw2dattools/interface/ANDatInterface.h"
-#include "gw2dattools/compression/inflateDatFileBuffer.h"
+#include <gw2dattools/interface/ANDatInterface.h>
+#include <gw2dattools/compression/inflateDatFileBuffer.h>
 
 int main( int argc, char* argv[] ) {
     const uint32_t aBufferSize = 1024 * 1024 * 30; // We make the assumption that no file is bigger than 30 Mb
 
-    auto datfile = "C:\\Games\\Guild Wars 2\\Gw2.dat";
+    auto datfile = "Gw2.dat";
 
     auto pANDatInterface = gw2dt::datfile::createANDatInterface( datfile );
     auto aFileRecordVect = pANDatInterface->getFileRecordVect( );
@@ -26,7 +26,7 @@ int main( int argc, char* argv[] ) {
 
         std::ofstream aOFStream;
         std::ostringstream oss;
-        oss << "Z:\\" << it.fileId;
+        oss << "/tmp/" << it.fileId;
         aOFStream.open( oss.str( ).c_str( ), std::ios::binary | std::ios::out );
 
         if ( aOriSize == aBufferSize ) {

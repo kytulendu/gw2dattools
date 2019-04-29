@@ -4,9 +4,9 @@
 #include <sstream>
 #include <fstream>
 
-#include "gw2dattools/interface/ANDatInterface.h"
-#include "gw2dattools/compression/inflateDatFileBuffer.h"
-#include "gw2dattools/compression/inflateTextureFileBuffer.h"
+#include <gw2dattools/interface/ANDatInterface.h>
+#include <gw2dattools/compression/inflateDatFileBuffer.h>
+#include <gw2dattools/compression/inflateTextureFileBuffer.h>
 
 int main( int argc, char* argv[] ) {
     if ( argc != 2 ) {
@@ -15,10 +15,12 @@ int main( int argc, char* argv[] ) {
     }
     auto file_id = atoi( argv[1] );
 
+    auto datfile = "Gw2.dat";
+
     std::cout << "Start" << std::endl;
     const uint32_t aBufferSize = 1024 * 1024 * 30; // We make the assumption that no file is bigger than 30 Mo
 
-    auto pANDatInterface = gw2dt::datfile::createANDatInterface( "C:\\Games\\Guild Wars 2\\Gw2.dat" );
+    auto pANDatInterface = gw2dt::datfile::createANDatInterface( datfile );
 
     std::cout << "Getting FileRecord Id: " << file_id << std::endl;
     auto aFileRecord = pANDatInterface->getFileRecordForFileId( file_id );
@@ -34,7 +36,7 @@ int main( int argc, char* argv[] ) {
     pANDatInterface->getBuffer( aFileRecord, aOriSize, pOriBuffer );
 
     std::ostringstream aStringstream;
-    aStringstream << "Z:\\";
+    aStringstream << "/tmp/";
     aStringstream << aFileRecord.fileId;
 
     std::ofstream aStream( aStringstream.str( ), std::ios::binary );
