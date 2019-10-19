@@ -71,16 +71,18 @@ endif()
 
 # installation - spefify files to package
 install(TARGETS gw2dattools EXPORT libgw2dattoolsTargets
-    RUNTIME DESTINATION bin
-    LIBRARY DESTINATION lib
-    ARCHIVE DESTINATION lib
-    INCLUDES DESTINATION include
+    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+    ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
+    PRIVATE_HEADER DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
 )
 
 install(DIRECTORY ${LIBGW2DATTOOLS_INCLUDE_DIR}/ DESTINATION include FILES_MATCHING PATTERN "*.h")
+
 if(MSVC)
     install(FILES $<TARGET_FILE_DIR:gw2dattools>/gw2dattoolsd.pdb DESTINATION bin CONFIGURATIONS Debug)
 endif()
+
 include(CMakePackageConfigHelpers)
 write_basic_package_version_file(
     ${CMAKE_BINARY_DIR}/cmake/libgw2dattoolsVersion.cmake
@@ -102,12 +104,12 @@ configure_package_config_file(${PROJECT_SOURCE_DIR}/libgw2dattoolsConfig.cmake.i
 )
 install(EXPORT libgw2dattoolsTargets
     FILE libgw2dattoolsTargets.cmake
-    DESTINATION "cmake"
+    DESTINATION "lib/cmake/libgw2dattools"
 )
 install(FILES
     ${CMAKE_BINARY_DIR}/cmake/libgw2dattoolsConfig.cmake
     ${CMAKE_BINARY_DIR}/cmake/libgw2dattoolsVersion.cmake
-    DESTINATION "cmake"
+    DESTINATION "lib/cmake/libgw2dattools"
 )
 
 if(NOT TARGET uninstall)
