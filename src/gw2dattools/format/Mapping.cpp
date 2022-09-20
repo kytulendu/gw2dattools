@@ -19,7 +19,7 @@ namespace gw2dt {
             pMapping->entries.resize( aNbOfEntries );
             readStructVect( iStream, pMapping->entries );
 
-            return std::move( pMapping );
+            return pMapping;
         }
 
     }

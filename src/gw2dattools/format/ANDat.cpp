@@ -13,7 +13,7 @@ namespace gw2dt {
             std::unique_ptr<ANDat> pANDat( new ANDat( ) );
             readStructs( iStream, pANDat->header );
 
-            return std::move( pANDat );
+            return pANDat;
         }
 
     }

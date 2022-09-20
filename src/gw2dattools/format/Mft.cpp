@@ -16,7 +16,7 @@ namespace gw2dt {
             pMft->entries.resize( pMft->header.nbOfEntries - 1 );
             readStructVect( iStream, pMft->entries );
 
-            return std::move( pMft );
+            return pMft;
         }
 
     }
