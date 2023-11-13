@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gw2dattools", "gw2dattools.vcxproj", "{81D81E5A-8FEC-4F92-B661-69D6B4C9DC8D}"
 EndProject
@@ -56,17 +56,22 @@ Global
 		{9142457D-C99C-4346-9197-044B46FF5527}.Release|x64.ActiveCfg = Release|x64
 		{9142457D-C99C-4346-9197-044B46FF5527}.Release|x64.Build.0 = Release|x64
 		{31CF84F3-9B6B-4F09-BEF8-EE7E12779E34}.Debug DLL|Win32.ActiveCfg = Debug DLL|Win32
-		{31CF84F3-9B6B-4F09-BEF8-EE7E12779E34}.Debug DLL|x64.ActiveCfg = Debug DLL|Win32
+		{31CF84F3-9B6B-4F09-BEF8-EE7E12779E34}.Debug DLL|x64.ActiveCfg = Debug DLL|x64
 		{31CF84F3-9B6B-4F09-BEF8-EE7E12779E34}.Debug|Win32.ActiveCfg = Debug|Win32
 		{31CF84F3-9B6B-4F09-BEF8-EE7E12779E34}.Debug|Win32.Build.0 = Debug|Win32
-		{31CF84F3-9B6B-4F09-BEF8-EE7E12779E34}.Debug|x64.ActiveCfg = Debug|Win32
+		{31CF84F3-9B6B-4F09-BEF8-EE7E12779E34}.Debug|x64.ActiveCfg = Debug|x64
+		{31CF84F3-9B6B-4F09-BEF8-EE7E12779E34}.Debug|x64.Build.0 = Debug|x64
 		{31CF84F3-9B6B-4F09-BEF8-EE7E12779E34}.Release DLL|Win32.ActiveCfg = Release DLL|Win32
-		{31CF84F3-9B6B-4F09-BEF8-EE7E12779E34}.Release DLL|x64.ActiveCfg = Release DLL|Win32
+		{31CF84F3-9B6B-4F09-BEF8-EE7E12779E34}.Release DLL|x64.ActiveCfg = Release DLL|x64
 		{31CF84F3-9B6B-4F09-BEF8-EE7E12779E34}.Release|Win32.ActiveCfg = Release|Win32
 		{31CF84F3-9B6B-4F09-BEF8-EE7E12779E34}.Release|Win32.Build.0 = Release|Win32
-		{31CF84F3-9B6B-4F09-BEF8-EE7E12779E34}.Release|x64.ActiveCfg = Release|Win32
+		{31CF84F3-9B6B-4F09-BEF8-EE7E12779E34}.Release|x64.ActiveCfg = Release|x64
+		{31CF84F3-9B6B-4F09-BEF8-EE7E12779E34}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A72EAAAF-63FD-4EEB-AE60-36A917492698}
 	EndGlobalSection
 EndGlobal
