@@ -15,3 +15,4 @@ Makefile
 *.depend
 *.layout
 *.db
+.vs
