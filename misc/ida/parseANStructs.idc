@@ -53,11 +53,15 @@ static isANStruct(iAddress)
             return 0;
         }
 
-        aCurrentAddress = aCurrentAddress +  16;
+        //Message("isANStruct: aCurrentAddress = 0x%X\n", aCurrentAddress);
+        //aCurrentAddress = aCurrentAddress + 16;
+        aCurrentAddress = aCurrentAddress + 32;
         aLoopGuard = aLoopGuard - 1;
+        //Message("isANStruct: aCurrentAddress + 32 = 0x%X\n", aCurrentAddress);
     }
 
-    return (aLoopGuard != 0 && Dword(aCurrentAddress + 4) != BADADDR && IS_ASCII(Dword(aCurrentAddress + 4)));
+    //return (aLoopGuard != 0 && Dword(aCurrentAddress + 4) != BADADDR && IS_ASCII(Dword(aCurrentAddress + 4)));
+    return (aLoopGuard != 0 && Qword(aCurrentAddress + 8) != BADADDR && IS_ASCII(Qword(aCurrentAddress + 8)));
 }
 
 static isANStructTab(iAddress, iNumber)
@@ -69,17 +73,21 @@ static isANStructTab(iAddress, iNumber)
 
     while (aLoopIndex < iNumber)
     {
-        if (Dword(aCurrentAddress) !=0)
+        //if (Dword(aCurrentAddress) != 0)
+        if (Qword(aCurrentAddress) != 0)
         {
-            if (!isANStruct(Dword(aCurrentAddress)))
+            //if (!isANStruct(Dword(aCurrentAddress)))
+            if (!isANStruct(Qword(aCurrentAddress)))
             {
                 break;
             }
         }
-        aCurrentAddress = aCurrentAddress + 12;
+        //aCurrentAddress = aCurrentAddress + 12;
+        aCurrentAddress = aCurrentAddress + 24;
         aLoopIndex = aLoopIndex + 1;
     }
 
+    //Message("isANStructTab: iNumber = %d, aLoopIndex = %d\n", iNumber, aLoopIndex);
     return (aLoopIndex == iNumber);
 }
 
@@ -132,7 +140,8 @@ static getSimpleTypeName(iAddress)
 static parseMember(iAddress, iParsedStructsId, iOutputFile)
 {
     auto aTypeId, aMemberName, aOptimized, aTempOutput;
-    aMemberName = getAsciiName(Dword(iAddress + 4));
+    //aMemberName = getAsciiName(Dword(iAddress + 4));
+    aMemberName = getAsciiName(Qword(iAddress + 8));
     aTypeId = Word(iAddress);
 
     if (aTypeId == 0x00)
@@ -143,17 +152,20 @@ static parseMember(iAddress, iParsedStructsId, iOutputFile)
     }
     else if (aTypeId == 0x01)
     {
-        aTempOutput = form("%s %s[%d]", parseStruct(Dword(iAddress + 8), iParsedStructsId, iOutputFile), aMemberName, Dword(iAddress + 12));
+        //aTempOutput = form("%s %s[%d]", parseStruct(Dword(iAddress + 8), iParsedStructsId, iOutputFile), aMemberName, Dword(iAddress + 12));
+		aTempOutput = form("%s %s[%d]", parseStruct(Qword(iAddress + 16), iParsedStructsId, iOutputFile), aMemberName, Qword(iAddress + 24));
         aOptimized = 1;
     }
     else if (aTypeId == 0x02)
     {
-        aTempOutput = form("TSTRUCT_ARRAY_PTR_START %s %s TSTRUCT_ARRAY_PTR_END", parseStruct(Dword(iAddress + 8), iParsedStructsId, iOutputFile), aMemberName);
+        //aTempOutput = form("TSTRUCT_ARRAY_PTR_START %s %s TSTRUCT_ARRAY_PTR_END", parseStruct(Dword(iAddress + 8), iParsedStructsId, iOutputFile), aMemberName);
+        aTempOutput = form("TSTRUCT_ARRAY_PTR_START %s %s TSTRUCT_ARRAY_PTR_END", parseStruct(Qword(iAddress + 16), iParsedStructsId, iOutputFile), aMemberName);
         aOptimized = 0;
     }
     else if (aTypeId == 0x03)
     {
-        aTempOutput = form("TSTRUCT_PTR_ARRAY_PTR_START %s %s TSTRUCT_PTR_ARRAY_PTR_END", parseStruct(Dword(iAddress + 8), iParsedStructsId, iOutputFile), aMemberName);
+        //aTempOutput = form("TSTRUCT_PTR_ARRAY_PTR_START %s %s TSTRUCT_PTR_ARRAY_PTR_END", parseStruct(Dword(iAddress + 8), iParsedStructsId, iOutputFile), aMemberName);
+        aTempOutput = form("TSTRUCT_PTR_ARRAY_PTR_START %s %s TSTRUCT_PTR_ARRAY_PTR_END", parseStruct(Qword(iAddress + 16), iParsedStructsId, iOutputFile), aMemberName);
         aOptimized = 0;
     }
     else if (aTypeId == 0x04)
@@ -218,7 +230,8 @@ static parseMember(iAddress, iParsedStructsId, iOutputFile)
     }
     else if (aTypeId == 0x10)
     {
-        aTempOutput = form("TPTR_START %s %s TPTR_END", parseStruct(Dword(iAddress + 8), iParsedStructsId, iOutputFile), aMemberName);
+        //aTempOutput = form("TPTR_START %s %s TPTR_END", parseStruct(Dword(iAddress + 8), iParsedStructsId, iOutputFile), aMemberName);
+        aTempOutput = form("TPTR_START %s %s TPTR_END", parseStruct(Qword(iAddress + 16), iParsedStructsId, iOutputFile), aMemberName);
         aOptimized = 0;
     }
     else if (aTypeId == 0x11)
@@ -238,7 +251,8 @@ static parseMember(iAddress, iParsedStructsId, iOutputFile)
     }
     else if (aTypeId == 0x14)
     {
-        aTempOutput = form("%s %s", parseStruct(Dword(iAddress + 8), iParsedStructsId, iOutputFile), aMemberName);
+        //aTempOutput = form("%s %s", parseStruct(Dword(iAddress + 8), iParsedStructsId, iOutputFile), aMemberName);
+        aTempOutput = form("%s %s", parseStruct(Qword(iAddress + 16), iParsedStructsId, iOutputFile), aMemberName);
         aOptimized = 1;
     }
     else if (aTypeId == 0x15)
@@ -283,7 +297,8 @@ static parseMember(iAddress, iParsedStructsId, iOutputFile)
     }
     else if (aTypeId == 0x1D)
     {
-        aTempOutput = form("%s %s", parseStruct(Dword(iAddress + 8), iParsedStructsId, iOutputFile), aMemberName);
+        //aTempOutput = form("%s %s", parseStruct(Dword(iAddress + 8), iParsedStructsId, iOutputFile), aMemberName);
+        aTempOutput = form("%s %s", parseStruct(Qword(iAddress + 16), iParsedStructsId, iOutputFile), aMemberName);
         aOptimized = 1;
     }
     else
@@ -308,7 +323,8 @@ static parseStruct(iAddress, iParsedStructsId, iOutputFile)
     aCurrentAddress = iAddress;
 
     // Special case for simple types
-    if (Byte(Dword(aCurrentAddress + 4)) == 0)
+    //if (Byte(Dword(aCurrentAddress + 4)) == 0)
+    if (Byte(Qword(aCurrentAddress + 8)) == 0)
     {
         return getSimpleTypeName(iAddress);
     }
@@ -321,10 +337,12 @@ static parseStruct(iAddress, iParsedStructsId, iOutputFile)
             aOutput = form("%s%s", aOutput, aMemberOutput);
         }
 
-        aCurrentAddress = aCurrentAddress +  16;
+        //aCurrentAddress = aCurrentAddress + 16;
+        aCurrentAddress = aCurrentAddress + 32;
     }
 
-    aStructName = getAsciiName(Dword(aCurrentAddress + 4));
+    //aStructName = getAsciiName(Dword(aCurrentAddress + 4));
+    aStructName = getAsciiName(Qword(aCurrentAddress + 8));
 
     if (!aAlreadyParsed)
     {
@@ -347,18 +365,20 @@ static parseStructTab(iANSTructTabOffset, iNbOfVersions, iOutputFile)
         DeleteArray(GetArrayId("PARSED_STRUCTS"));
         aParsedStructsId = CreateArray("PARSED_STRUCTS");
 
-        aCurrentAddress = Dword(iANSTructTabOffset + 12 * aLoopIndex);
-		aSubAddress = Dword(iANSTructTabOffset + 12 * aLoopIndex + 4);
+        //aCurrentAddress = Dword(iANSTructTabOffset + 12 * aLoopIndex);
+        //aSubAddress = Dword(iANSTructTabOffset + 12 * aLoopIndex + 4);
+		aCurrentAddress = Qword(iANSTructTabOffset + 24 * aLoopIndex);
+        aSubAddress = Qword(iANSTructTabOffset + 24 * aLoopIndex + 4);
         if (aCurrentAddress !=0)
         {
-			if (aSubAddress != 0)
-			{
-				fprintf(iOutputFile, "/* Version: %d, ReferencedFunction: 0x%X */\n", aLoopIndex, aSubAddress);
-			}
-			else
-			{
-				fprintf(iOutputFile, "/* Version: %d */\n", aLoopIndex);
-			}
+            if (aSubAddress != 0)
+            {
+                fprintf(iOutputFile, "/* Version: %d, ReferencedFunction: 0x%X */\n", aLoopIndex, aSubAddress);
+            }
+            else
+            {
+                fprintf(iOutputFile, "/* Version: %d */\n", aLoopIndex);
+            }
             parseStruct(aCurrentAddress, aParsedStructsId, iOutputFile);
         }
         aLoopIndex = aLoopIndex - 1;
@@ -438,9 +458,11 @@ static main(void)
             aNbOfVersions = Dword(aCurrentAddress + 4);
             if (aNbOfVersions > 0 && aNbOfVersions < 100)
             {
-                aANSTructTabOffset = Dword(aCurrentAddress + 8);
+                //aANSTructTabOffset = Dword(aCurrentAddress + 8);
+                aANSTructTabOffset = Qword(aCurrentAddress + 8);
                 if ((aMinRDataSeg < aANSTructTabOffset) && (aMaxRDataSeg > aANSTructTabOffset))
                 {
+                    Message("Address: %08.8Xh, ChunkName:%s, versions: %d, strucTab: 0x%X\n", aCurrentAddress, aChunkName, aNbOfVersions, aANSTructTabOffset);
                     if (isANStructTab(aANSTructTabOffset, aNbOfVersions))
                     {
                         if (!isIn(aParsedTablesId, aANSTructTabOffset))
@@ -450,7 +472,7 @@ static main(void)
                             fprintf(aOutputFile, "/* ===============================================\n");
                             fprintf(aOutputFile, " * Chunk: %s, versions: %d, strucTab: 0x%X\n", aChunkName, aNbOfVersions, aANSTructTabOffset);
                             fprintf(aOutputFile, " * ===============================================\n");
-							fprintf(aOutputFile, " */\n\n");
+                            fprintf(aOutputFile, " */\n\n");
                             parseStructTab(aANSTructTabOffset, aNbOfVersions, aOutputFile);
                             fprintf(aOutputFile, "\n");
                         }
