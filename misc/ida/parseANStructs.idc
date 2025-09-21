@@ -133,8 +133,10 @@ static getSimpleTypeName(iAddress)
         return "word3";
     else if (aTypeId == 0x1B)
         return "fileref";
+    else if (aTypeId == 0x25)
+        return "qword";
     else
-        return "ERROR";
+        return form("ERROR 0x%X", aTypeId);
 }
 
 static parseMember(iAddress, iParsedStructsId, iOutputFile)
@@ -153,7 +155,7 @@ static parseMember(iAddress, iParsedStructsId, iOutputFile)
     else if (aTypeId == 0x01)
     {
         //aTempOutput = form("%s %s[%d]", parseStruct(Dword(iAddress + 8), iParsedStructsId, iOutputFile), aMemberName, Dword(iAddress + 12));
-		aTempOutput = form("%s %s[%d]", parseStruct(Qword(iAddress + 16), iParsedStructsId, iOutputFile), aMemberName, Qword(iAddress + 24));
+        aTempOutput = form("%s %s[%d]", parseStruct(Qword(iAddress + 16), iParsedStructsId, iOutputFile), aMemberName, Qword(iAddress + 24));
         aOptimized = 1;
     }
     else if (aTypeId == 0x02)
@@ -301,10 +303,20 @@ static parseMember(iAddress, iParsedStructsId, iOutputFile)
         aTempOutput = form("%s %s", parseStruct(Qword(iAddress + 16), iParsedStructsId, iOutputFile), aMemberName);
         aOptimized = 1;
     }
+    else if (aTypeId == 0x24)
+    {
+        aTempOutput = form("%s %s", "dword", aMemberName);
+        aOptimized = 1;
+    }
+    else if (aTypeId == 0x25)
+    {
+        aTempOutput = form("%s %s", "qword", aMemberName);
+        aOptimized = 1;
+    }
     else
     {
-        aTempOutput = form("ERROR %s\n", aMemberName);
-        Message("ERROR: Encountered > 0x1D as a member typeId.");
+        aTempOutput = form("%s %s", "ERROR", aMemberName);
+        Message("ERROR: Encountered 0x%X as a member typeId.\n", aTypeId);
         aOptimized = 1;
     }
 
@@ -367,7 +379,7 @@ static parseStructTab(iANSTructTabOffset, iNbOfVersions, iOutputFile)
 
         //aCurrentAddress = Dword(iANSTructTabOffset + 12 * aLoopIndex);
         //aSubAddress = Dword(iANSTructTabOffset + 12 * aLoopIndex + 4);
-		aCurrentAddress = Qword(iANSTructTabOffset + 24 * aLoopIndex);
+        aCurrentAddress = Qword(iANSTructTabOffset + 24 * aLoopIndex);
         aSubAddress = Qword(iANSTructTabOffset + 24 * aLoopIndex + 4);
         if (aCurrentAddress !=0)
         {
