@@ -1,0 +1,593 @@
+/* ===============================================
+ * Chunk: TOOL, versions: 17, strucTab: 0x142193670
+ * ===============================================
+ */
+
+/* Version: 16, ReferencedFunction: 0x410DC0E000000001 */
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr cloudNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr emitterNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolCloudV16;
+
+typedef struct {
+    qword blitId;
+    fileref filename;
+} ModelToolBlitTextureV16;
+
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr streakNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr anchorNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolStreakV16;
+
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr systemNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr boltNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr nodeNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolLightningV16;
+
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START byte animation TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START dword pointers TSTRUCT_ARRAY_PTR_END;
+} PackGrannyAnimationTypeV1;
+
+typedef struct {
+    qword name;
+    wchar_ptr filename;
+    PackGrannyAnimationTypeV1 data;
+} ModelToolAnimationV16;
+
+typedef struct {
+    qword animToken;
+    wchar_ptr cmpGroup;
+    wchar_ptr cmpType;
+} ModelSequenceCompressionInfoV16;
+
+typedef struct {
+    qword modelType;
+    TSTRUCT_ARRAY_PTR_START char_ptr materialNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr obstacleNames TSTRUCT_ARRAY_PTR_END;
+    TPTR_START ModelToolCloudV16 cloudData TPTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelToolBlitTextureV16 blitTextures TSTRUCT_ARRAY_PTR_END;
+    TPTR_START ModelToolStreakV16 streakData TPTR_END;
+    TPTR_START ModelToolLightningV16 lightningData TPTR_END;
+    TSTRUCT_ARRAY_PTR_START qword permutationTokens TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelToolAnimationV16 highLodAnimations TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelSequenceCompressionInfoV16 compressionInfos TSTRUCT_ARRAY_PTR_END;
+    char_ptr region;
+} ModelFileToolV16;
+
+/* Version: 15, ReferencedFunction: 0x1 */
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr cloudNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr emitterNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolCloudV15;
+
+typedef struct {
+    qword blitId;
+    fileref filename;
+} ModelToolBlitTextureV15;
+
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr streakNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr anchorNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolStreakV15;
+
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr systemNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr boltNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr nodeNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolLightningV15;
+
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START byte animation TSTRUCT_ARRAY_PTR_END;
+} PackGrannyAnimationTypeV0;
+
+typedef struct {
+    qword name;
+    wchar_ptr filename;
+    PackGrannyAnimationTypeV0 data;
+} ModelToolAnimationV15;
+
+typedef struct {
+    qword animToken;
+    wchar_ptr cmpGroup;
+    wchar_ptr cmpType;
+} ModelSequenceCompressionInfoV15;
+
+typedef struct {
+    qword modelType;
+    TSTRUCT_ARRAY_PTR_START char_ptr materialNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr obstacleNames TSTRUCT_ARRAY_PTR_END;
+    TPTR_START ModelToolCloudV15 cloudData TPTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelToolBlitTextureV15 blitTextures TSTRUCT_ARRAY_PTR_END;
+    TPTR_START ModelToolStreakV15 streakData TPTR_END;
+    TPTR_START ModelToolLightningV15 lightningData TPTR_END;
+    TSTRUCT_ARRAY_PTR_START qword permutationTokens TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelToolAnimationV15 highLodAnimations TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelSequenceCompressionInfoV15 compressionInfos TSTRUCT_ARRAY_PTR_END;
+    char_ptr region;
+} ModelFileToolV15;
+
+/* Version: 14, ReferencedFunction: 0x1 */
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr cloudNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr emitterNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolCloudV14;
+
+typedef struct {
+    qword blitId;
+    fileref filename;
+} ModelToolBlitTextureV14;
+
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr streakNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr anchorNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolStreakV14;
+
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr systemNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr boltNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr nodeNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolLightningV14;
+
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START byte animation TSTRUCT_ARRAY_PTR_END;
+} PackGrannyAnimationTypeV0;
+
+typedef struct {
+    qword name;
+    wchar_ptr filename;
+    PackGrannyAnimationTypeV0 data;
+} ModelToolAnimationV14;
+
+typedef struct {
+    qword animToken;
+    wchar_ptr cmpGroup;
+    wchar_ptr cmpType;
+} ModelSequenceCompressionInfoV14;
+
+typedef struct {
+    qword modelType;
+    TSTRUCT_ARRAY_PTR_START char_ptr materialNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr obstacleNames TSTRUCT_ARRAY_PTR_END;
+    TPTR_START ModelToolCloudV14 cloudData TPTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelToolBlitTextureV14 blitTextures TSTRUCT_ARRAY_PTR_END;
+    TPTR_START ModelToolStreakV14 streakData TPTR_END;
+    TPTR_START ModelToolLightningV14 lightningData TPTR_END;
+    TSTRUCT_ARRAY_PTR_START qword permutationTokens TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelToolAnimationV14 highLodAnimations TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelSequenceCompressionInfoV14 compressionInfos TSTRUCT_ARRAY_PTR_END;
+} ModelFileToolV14;
+
+/* Version: 13, ReferencedFunction: 0x1 */
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr cloudNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr emitterNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolCloudV13;
+
+typedef struct {
+    qword blitId;
+    fileref filename;
+} ModelToolBlitTextureV13;
+
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr streakNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr anchorNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolStreakV13;
+
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr systemNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr boltNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr nodeNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolLightningV13;
+
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START byte animation TSTRUCT_ARRAY_PTR_END;
+} PackGrannyAnimationTypeV0;
+
+typedef struct {
+    qword name;
+    wchar_ptr filename;
+    PackGrannyAnimationTypeV0 data;
+} ModelToolAnimationV13;
+
+typedef struct {
+    qword modelType;
+    TSTRUCT_ARRAY_PTR_START char_ptr materialNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr obstacleNames TSTRUCT_ARRAY_PTR_END;
+    TPTR_START ModelToolCloudV13 cloudData TPTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelToolBlitTextureV13 blitTextures TSTRUCT_ARRAY_PTR_END;
+    TPTR_START ModelToolStreakV13 streakData TPTR_END;
+    TPTR_START ModelToolLightningV13 lightningData TPTR_END;
+    TSTRUCT_ARRAY_PTR_START qword permutationTokens TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelToolAnimationV13 highLodAnimations TSTRUCT_ARRAY_PTR_END;
+} ModelFileToolV13;
+
+/* Version: 12, ReferencedFunction: 0x1 */
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr cloudNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr emitterNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolCloudV12;
+
+typedef struct {
+    qword blitId;
+    fileref filename;
+} ModelToolBlitTextureV12;
+
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr streakNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr anchorNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolStreakV12;
+
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr systemNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr boltNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr nodeNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolLightningV12;
+
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START byte animation TSTRUCT_ARRAY_PTR_END;
+} PackGrannyAnimationTypeV0;
+
+typedef struct {
+    qword name;
+    wchar_ptr filename;
+    PackGrannyAnimationTypeV0 data;
+} ModelToolAnimationV12;
+
+typedef struct {
+    qword modelType;
+    TSTRUCT_ARRAY_PTR_START char_ptr materialNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr obstacleNames TSTRUCT_ARRAY_PTR_END;
+    TPTR_START ModelToolCloudV12 cloudData TPTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelToolBlitTextureV12 blitTextures TSTRUCT_ARRAY_PTR_END;
+    TPTR_START ModelToolStreakV12 streakData TPTR_END;
+    TPTR_START ModelToolLightningV12 lightningData TPTR_END;
+    TSTRUCT_ARRAY_PTR_START qword permutationTokens TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelToolAnimationV12 highLodAnimations TSTRUCT_ARRAY_PTR_END;
+} ModelFileToolV12;
+
+/* Version: 11, ReferencedFunction: 0x410DC0D000000001 */
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr cloudNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr emitterNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolCloudV11;
+
+typedef struct {
+    qword blitId;
+    fileref filename;
+} ModelToolBlitTextureV11;
+
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr streakNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr anchorNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolStreakV11;
+
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr systemNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr boltNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr nodeNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolLightningV11;
+
+typedef struct {
+    qword modelType;
+    TSTRUCT_ARRAY_PTR_START char_ptr materialNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr obstacleNames TSTRUCT_ARRAY_PTR_END;
+    TPTR_START ModelToolCloudV11 cloudData TPTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelToolBlitTextureV11 blitTextures TSTRUCT_ARRAY_PTR_END;
+    TPTR_START ModelToolStreakV11 streakData TPTR_END;
+    TPTR_START ModelToolLightningV11 lightningData TPTR_END;
+    TSTRUCT_ARRAY_PTR_START qword permutationTokens TSTRUCT_ARRAY_PTR_END;
+} ModelFileToolV11;
+
+/* Version: 10, ReferencedFunction: 0x410DC28000000001 */
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr cloudNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr emitterNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolCloudV10;
+
+typedef struct {
+    qword blitId;
+    filename filename;
+} ModelToolBlitTextureV10;
+
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr streakNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr anchorNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolStreakV10;
+
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr systemNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr boltNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr nodeNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolLightningV10;
+
+typedef struct {
+    qword modelType;
+    TSTRUCT_ARRAY_PTR_START char_ptr materialNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr obstacleNames TSTRUCT_ARRAY_PTR_END;
+    TPTR_START ModelToolCloudV10 cloudData TPTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelToolBlitTextureV10 blitTextures TSTRUCT_ARRAY_PTR_END;
+    TPTR_START ModelToolStreakV10 streakData TPTR_END;
+    TPTR_START ModelToolLightningV10 lightningData TPTR_END;
+    TSTRUCT_ARRAY_PTR_START qword permutationTokens TSTRUCT_ARRAY_PTR_END;
+} ModelFileToolV10;
+
+/* Version: 9, ReferencedFunction: 0x1 */
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr cloudNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr emitterNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolCloudV9;
+
+typedef struct {
+    qword blitId;
+    filename filename;
+} ModelToolBlitTextureV9;
+
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr streakNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr anchorNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolStreakV9;
+
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr systemNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr boltNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr nodeNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolLightningV9;
+
+typedef struct {
+    qword id;
+    dword type;
+    dword mergeIndex;
+    float time;
+    qword val;
+    filename strVal;
+} ModelToolPropertyDataV9;
+
+typedef struct {
+    qword modelType;
+    TSTRUCT_ARRAY_PTR_START char_ptr materialNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr obstacleNames TSTRUCT_ARRAY_PTR_END;
+    TPTR_START ModelToolCloudV9 cloudData TPTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelToolBlitTextureV9 blitTextures TSTRUCT_ARRAY_PTR_END;
+    TPTR_START ModelToolStreakV9 streakData TPTR_END;
+    TPTR_START ModelToolLightningV9 lightningData TPTR_END;
+    TSTRUCT_ARRAY_PTR_START qword permutationTokens TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelToolPropertyDataV9 properties TSTRUCT_ARRAY_PTR_END;
+} ModelFileToolV9;
+
+/* Version: 8, ReferencedFunction: 0x1 */
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr cloudNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr emitterNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolCloudV8;
+
+typedef struct {
+    qword blitId;
+    filename filename;
+} ModelToolBlitTextureV8;
+
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr streakNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr anchorNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolStreakV8;
+
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr systemNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr boltNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr nodeNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolLightningV8;
+
+typedef struct {
+    qword modelType;
+    TSTRUCT_ARRAY_PTR_START char_ptr materialNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr obstacleNames TSTRUCT_ARRAY_PTR_END;
+    TPTR_START ModelToolCloudV8 cloudData TPTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelToolBlitTextureV8 blitTextures TSTRUCT_ARRAY_PTR_END;
+    TPTR_START ModelToolStreakV8 streakData TPTR_END;
+    TPTR_START ModelToolLightningV8 lightningData TPTR_END;
+    TSTRUCT_ARRAY_PTR_START qword permutationTokens TSTRUCT_ARRAY_PTR_END;
+} ModelFileToolV8;
+
+/* Version: 7, ReferencedFunction: 0x1 */
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr cloudNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr emitterNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolCloudV7;
+
+typedef struct {
+    qword blitId;
+    filename filename;
+} ModelToolBlitTextureV7;
+
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr streakNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr anchorNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolStreakV7;
+
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr systemNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr boltNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr nodeNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolLightningV7;
+
+typedef struct {
+    qword modelType;
+    TSTRUCT_ARRAY_PTR_START char_ptr materialNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr obstacleNames TSTRUCT_ARRAY_PTR_END;
+    TPTR_START ModelToolCloudV7 cloudData TPTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelToolBlitTextureV7 blitTextures TSTRUCT_ARRAY_PTR_END;
+    TPTR_START ModelToolStreakV7 streakData TPTR_END;
+    TPTR_START ModelToolLightningV7 lightningData TPTR_END;
+} ModelFileToolV7;
+
+/* Version: 6, ReferencedFunction: 0x410DC22000000001 */
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr cloudNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr emitterNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolCloudV6;
+
+typedef struct {
+    qword blitId;
+    filename filename;
+} ModelToolBlitTextureV6;
+
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr streakNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr anchorNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolStreakV6;
+
+typedef struct {
+    qword modelType;
+    TSTRUCT_ARRAY_PTR_START char_ptr materialNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr obstacleNames TSTRUCT_ARRAY_PTR_END;
+    TPTR_START ModelToolCloudV6 cloudData TPTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelToolBlitTextureV6 blitTextures TSTRUCT_ARRAY_PTR_END;
+    TPTR_START ModelToolStreakV6 streakData TPTR_END;
+} ModelFileToolV6;
+
+/* Version: 5, ReferencedFunction: 0x410DC1F000000001 */
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr cloudNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr emitterNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolCloudV5;
+
+typedef struct {
+    qword sequence;
+    TSTRUCT_ARRAY_PTR_START float keys TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START float3 values TSTRUCT_ARRAY_PTR_END;
+} ModelToolMotionV5;
+
+typedef struct {
+    qword blitId;
+    filename filename;
+} ModelToolBlitTextureV5;
+
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr streakNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr anchorNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolStreakV5;
+
+typedef struct {
+    qword modelType;
+    TSTRUCT_ARRAY_PTR_START char_ptr materialNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr obstacleNames TSTRUCT_ARRAY_PTR_END;
+    TPTR_START ModelToolCloudV5 cloudData TPTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelToolMotionV5 motions TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelToolBlitTextureV5 blitTextures TSTRUCT_ARRAY_PTR_END;
+    TPTR_START ModelToolStreakV5 streakData TPTR_END;
+} ModelFileToolV5;
+
+/* Version: 4, ReferencedFunction: 0x1 */
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr cloudNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr emitterNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr obstacleNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolCloudV4;
+
+typedef struct {
+    qword sequence;
+    TSTRUCT_ARRAY_PTR_START float keys TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START float3 values TSTRUCT_ARRAY_PTR_END;
+} ModelToolMotionV4;
+
+typedef struct {
+    qword blitId;
+    filename filename;
+} ModelToolBlitTextureV4;
+
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr streakNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr anchorNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolStreakV4;
+
+typedef struct {
+    qword modelType;
+    TSTRUCT_ARRAY_PTR_START char_ptr materialNames TSTRUCT_ARRAY_PTR_END;
+    TPTR_START ModelToolCloudV4 cloudData TPTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelToolMotionV4 motions TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelToolBlitTextureV4 blitTextures TSTRUCT_ARRAY_PTR_END;
+    TPTR_START ModelToolStreakV4 streakData TPTR_END;
+} ModelFileToolV4;
+
+/* Version: 3, ReferencedFunction: 0x1 */
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr cloudNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr emitterNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr obstacleNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolCloudV3;
+
+typedef struct {
+    qword sequence;
+    TSTRUCT_ARRAY_PTR_START float keys TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START float3 values TSTRUCT_ARRAY_PTR_END;
+} ModelToolMotionV3;
+
+typedef struct {
+    qword blitId;
+    filename filename;
+} ModelToolBlitTextureV3;
+
+typedef struct {
+    qword modelType;
+    TSTRUCT_ARRAY_PTR_START char_ptr materialNames TSTRUCT_ARRAY_PTR_END;
+    TPTR_START ModelToolCloudV3 cloudData TPTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelToolMotionV3 motions TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelToolBlitTextureV3 blitTextures TSTRUCT_ARRAY_PTR_END;
+} ModelFileToolV3;
+
+/* Version: 2, ReferencedFunction: 0x1 */
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr cloudNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr emitterNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr obstacleNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolCloudV2;
+
+typedef struct {
+    qword sequence;
+    TSTRUCT_ARRAY_PTR_START float keys TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START float3 values TSTRUCT_ARRAY_PTR_END;
+} ModelToolMotionV2;
+
+typedef struct {
+    qword blitId;
+    filename filename;
+} ModelToolBlitTextureV2;
+
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr materialNames TSTRUCT_ARRAY_PTR_END;
+    TPTR_START ModelToolCloudV2 cloudData TPTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelToolMotionV2 motions TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelToolBlitTextureV2 blitTextures TSTRUCT_ARRAY_PTR_END;
+} ModelFileToolV2;
+
+/* Version: 1, ReferencedFunction: 0x1 */
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr cloudNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr emitterNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr obstacleNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolCloudV1;
+
+typedef struct {
+    qword sequence;
+    TSTRUCT_ARRAY_PTR_START float keys TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START float3 values TSTRUCT_ARRAY_PTR_END;
+} ModelToolMotionV1;
+
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr materialNames TSTRUCT_ARRAY_PTR_END;
+    TPTR_START ModelToolCloudV1 cloudData TPTR_END;
+    TSTRUCT_ARRAY_PTR_START ModelToolMotionV1 motions TSTRUCT_ARRAY_PTR_END;
+} ModelFileToolV1;
+
+/* Version: 0, ReferencedFunction: 0x1 */
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr cloudNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr emitterNames TSTRUCT_ARRAY_PTR_END;
+    TSTRUCT_ARRAY_PTR_START char_ptr obstacleNames TSTRUCT_ARRAY_PTR_END;
+} ModelToolCloudV0;
+
+typedef struct {
+    TSTRUCT_ARRAY_PTR_START char_ptr materialNames TSTRUCT_ARRAY_PTR_END;
+    TPTR_START ModelToolCloudV0 cloudData TPTR_END;
+} ModelFileToolV0;
